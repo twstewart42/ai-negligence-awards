@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Negligence Awards</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface-hover: #1c2333;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #f0883e;
+    --gold: #f5c842;
+    --critical: #f85149;
+    --high: #f0883e;
+    --medium: #d29922;
+    --low: #3fb950;
+    --link: #58a6ff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding: 3rem 1.5rem 2rem;
+    background: linear-gradient(180deg, #1a1206 0%, var(--bg) 100%);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .trophy { font-size: 4rem; margin-bottom: 0.5rem; display: block; }
+
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--gold), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+  }
+
+  header p.tagline {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.25rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* Controls */
+  .controls {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.6rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-box:focus {
+    border-color: var(--accent);
+  }
+
+  .search-box::placeholder {
+    color: var(--text-muted);
+  }
+
+  select {
+    padding: 0.6rem 0.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.85rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    appearance: auto;
+  }
+
+  select:focus {
+    border-color: var(--accent);
+  }
+
+  /* Incident list */
+  .incident-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+  }
+
+  .results-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Incident card */
+  .incident-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+
+  .incident-card:hover {
+    border-color: var(--text-muted);
+  }
+
+  .card-header {
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: start;
+    user-select: none;
+  }
+
+  .card-header:hover {
+    background: var(--surface-hover);
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.4rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .card-summary {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .card-date {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .expand-icon {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    transition: transform 0.2s;
+  }
+
+  .incident-card.expanded .expand-icon {
+    transform: rotate(180deg);
+  }
+
+  /* Badges */
+  .badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 99px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .severity-critical { background: rgba(248, 81, 73, 0.15); color: var(--critical); border: 1px solid rgba(248, 81, 73, 0.3); }
+  .severity-high { background: rgba(240, 136, 62, 0.15); color: var(--high); border: 1px solid rgba(240, 136, 62, 0.3); }
+  .severity-medium { background: rgba(210, 153, 34, 0.15); color: var(--medium); border: 1px solid rgba(210, 153, 34, 0.3); }
+  .severity-low { background: rgba(63, 185, 80, 0.15); color: var(--low); border: 1px solid rgba(63, 185, 80, 0.3); }
+
+  .award-badge {
+    background: rgba(245, 200, 66, 0.1);
+    color: var(--gold);
+    border: 1px solid rgba(245, 200, 66, 0.25);
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 99px;
+    white-space: nowrap;
+  }
+
+  .org-badge {
+    background: rgba(88, 166, 255, 0.1);
+    color: var(--link);
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 99px;
+    white-space: nowrap;
+  }
+
+  /* Expanded content */
+  .card-details {
+    display: none;
+    padding: 0 1.5rem 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .incident-card.expanded .card-details {
+    display: block;
+  }
+
+  .detail-section {
+    margin-top: 1rem;
+  }
+
+  .detail-section h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+  }
+
+  .detail-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  .sources-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sources-list li {
+    margin-bottom: 0.3rem;
+  }
+
+  .sources-list a {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .sources-list a:hover {
+    text-decoration: underline;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1rem;
+  }
+
+  .tag {
+    background: rgba(139, 148, 158, 0.1);
+    color: var(--text-muted);
+    border: 1px solid rgba(139, 148, 158, 0.2);
+    padding: 0.1rem 0.45rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-family: monospace;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+  }
+
+  footer a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+  }
+
+  .no-results .nr-icon { font-size: 3rem; margin-bottom: 1rem; display: block; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    header h1 { font-size: 1.75rem; }
+    header p.tagline { font-size: 0.95rem; }
+    .stats-bar { gap: 1rem; }
+    .stat-value { font-size: 1.3rem; }
+    .card-header { grid-template-columns: 1fr; }
+    .card-right { flex-direction: row; align-items: center; }
+    .controls { flex-direction: column; }
+    .search-box { width: 100%; }
+    select { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="trophy" role="img" aria-label="trophy">&#127942;</span>
+  <h1>The AI Negligence Awards</h1>
+  <p class="tagline">Cataloging the finest moments in AI security, privacy, and "what were they thinking?" since the industry modus operandi became move fast and break everything.</p>
+  <p class="tagline" style="margin-top: 0.25rem; font-size: 0.85rem; opacity: 0.6;">This website was built with AI, because irony is dead.</p>
+</header>
+
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-value" id="total-count">0</div>
+    <div class="stat-label">Incidents</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value" id="org-count">0</div>
+    <div class="stat-label">Organizations</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value" id="critical-count">0</div>
+    <div class="stat-label">Critical</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value" id="billion-count">$0B+</div>
+    <div class="stat-label">Damages</div>
+  </div>
+</div>
+
+<div class="controls">
+  <input type="text" class="search-box" id="search" placeholder="Search incidents..." autocomplete="off">
+  <select id="filter-award">
+    <option value="">All Awards</option>
+  </select>
+  <select id="filter-severity">
+    <option value="">All Severities</option>
+    <option value="critical">Critical</option>
+    <option value="high">High</option>
+    <option value="medium">Medium</option>
+    <option value="low">Low</option>
+  </select>
+  <select id="filter-org">
+    <option value="">All Organizations</option>
+  </select>
+  <select id="filter-year">
+    <option value="">All Years</option>
+  </select>
+  <select id="sort-by">
+    <option value="date-desc">Newest First</option>
+    <option value="date-asc">Oldest First</option>
+    <option value="severity">Severity</option>
+    <option value="org">Organization</option>
+  </select>
+</div>
+
+<div class="incident-list" id="incident-list">
+  <div class="results-count" id="results-count"></div>
+</div>
+
+<footer>
+  <p>The AI Negligence Awards &mdash; Because somebody has to keep score.</p>
+  <p style="margin-top: 0.5rem;">Inspired by <a href="https://www.lastweekinaws.com" target="_blank" rel="noopener">Corey Quinn's S3 Bucket Negligence Award</a>.</p>
+</footer>
+
+<script>
+(function() {
+  const SEVERITY_ORDER = { critical: 0, high: 1, medium: 2, low: 3 };
+  const AWARD_ICONS = {
+    "Oops, Was That Public?": "\uD83D\uDE48",
+    "Move Fast and Break Everything": "\uD83C\uDFC3",
+    "Hallucinari Ex Machina": "\uD83C\uDF0D",
+    "YOLO!!": "\uD83D\uDD13",
+    "Trust Me, I'm an Algorithm": "\uD83E\uDD16",
+    "The Insider Threats We Made Along the Way": "\uD83D\uDD75\uFE0F",
+    "Achievement Unlocked: Regulatory Action": "\u2696\uFE0F"
+  };
+
+  let allIncidents = [];
+
+  async function init() {
+    try {
+      const resp = await fetch('incidents.json');
+      allIncidents = await resp.json();
+    } catch (e) {
+      document.getElementById('incident-list').innerHTML =
+        '<div class="no-results"><span class="nr-icon">&#9888;&#65039;</span><p>Could not load incidents.json. Make sure the file is served over HTTP (use a local server).</p></div>';
+      return;
+    }
+
+    populateFilters();
+    updateStats();
+    render();
+
+    document.getElementById('search').addEventListener('input', render);
+    document.getElementById('filter-award').addEventListener('change', render);
+    document.getElementById('filter-severity').addEventListener('change', render);
+    document.getElementById('filter-org').addEventListener('change', render);
+    document.getElementById('filter-year').addEventListener('change', render);
+    document.getElementById('sort-by').addEventListener('change', render);
+  }
+
+  function populateFilters() {
+    const awards = [...new Set(allIncidents.map(i => i.award))].sort();
+    const orgs = [...new Set(allIncidents.map(i => i.organization))].sort();
+    const years = [...new Set(allIncidents.map(i => i.date.slice(0, 4)))].sort().reverse();
+
+    const awardSel = document.getElementById('filter-award');
+    awards.forEach(a => {
+      const opt = document.createElement('option');
+      opt.value = a;
+      opt.textContent = (AWARD_ICONS[a] || '') + ' ' + a;
+      awardSel.appendChild(opt);
+    });
+
+    const orgSel = document.getElementById('filter-org');
+    orgs.forEach(o => {
+      const opt = document.createElement('option');
+      opt.value = o;
+      opt.textContent = o;
+      orgSel.appendChild(opt);
+    });
+
+    const yearSel = document.getElementById('filter-year');
+    years.forEach(y => {
+      const opt = document.createElement('option');
+      opt.value = y;
+      opt.textContent = y;
+      yearSel.appendChild(opt);
+    });
+  }
+
+  function updateStats() {
+    document.getElementById('total-count').textContent = allIncidents.length;
+    document.getElementById('org-count').textContent = new Set(allIncidents.map(i => i.organization)).size;
+    document.getElementById('critical-count').textContent = allIncidents.filter(i => i.severity === 'critical').length;
+    document.getElementById('billion-count').textContent = '$113B+';
+  }
+
+  function getFiltered() {
+    const q = document.getElementById('search').value.toLowerCase();
+    const award = document.getElementById('filter-award').value;
+    const severity = document.getElementById('filter-severity').value;
+    const org = document.getElementById('filter-org').value;
+    const year = document.getElementById('filter-year').value;
+    const sort = document.getElementById('sort-by').value;
+
+    let filtered = allIncidents.filter(i => {
+      if (award && i.award !== award) return false;
+      if (severity && i.severity !== severity) return false;
+      if (org && i.organization !== org) return false;
+      if (year && !i.date.startsWith(year)) return false;
+      if (q) {
+        const searchable = [i.title, i.summary, i.details, i.organization, i.award, ...i.tags].join(' ').toLowerCase();
+        if (!searchable.includes(q)) return false;
+      }
+      return true;
+    });
+
+    filtered.sort((a, b) => {
+      switch (sort) {
+        case 'date-asc': return a.date.localeCompare(b.date);
+        case 'severity': return (SEVERITY_ORDER[a.severity] ?? 9) - (SEVERITY_ORDER[b.severity] ?? 9) || b.date.localeCompare(a.date);
+        case 'org': return a.organization.localeCompare(b.organization) || b.date.localeCompare(a.date);
+        default: return b.date.localeCompare(a.date);
+      }
+    });
+
+    return filtered;
+  }
+
+  function formatDate(dateStr) {
+    const d = new Date(dateStr + 'T00:00:00');
+    return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function render() {
+    const incidents = getFiltered();
+    const container = document.getElementById('incident-list');
+    const countEl = document.getElementById('results-count');
+
+    countEl.textContent = incidents.length === allIncidents.length
+      ? `${incidents.length} incidents on record`
+      : `Showing ${incidents.length} of ${allIncidents.length} incidents`;
+
+    const cards = incidents.map(i => {
+      const icon = AWARD_ICONS[i.award] || '\uD83C\uDFC6';
+      const sourcesHtml = (i.sources || []).map(s =>
+        `<li><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.title)} &#8599;</a></li>`
+      ).join('');
+      const tagsHtml = (i.tags || []).map(t =>
+        `<span class="tag">${escapeHtml(t)}</span>`
+      ).join('');
+
+      return `
+        <div class="incident-card" data-id="${escapeHtml(i.id)}">
+          <div class="card-header" onclick="this.parentElement.classList.toggle('expanded')">
+            <div>
+              <div class="card-meta">
+                <span class="badge severity-${i.severity}">${i.severity}</span>
+                <span class="award-badge">${icon} ${escapeHtml(i.award)}</span>
+                <span class="org-badge">${escapeHtml(i.organization)}</span>
+              </div>
+              <div class="card-title">${escapeHtml(i.title)}</div>
+              <div class="card-summary">${escapeHtml(i.summary)}</div>
+            </div>
+            <div class="card-right">
+              <span class="card-date">${formatDate(i.date)}</span>
+              <span class="expand-icon">&#9660;</span>
+            </div>
+          </div>
+          <div class="card-details">
+            <div class="detail-section">
+              <h4>What Happened</h4>
+              <p>${escapeHtml(i.details)}</p>
+            </div>
+            <div class="detail-section">
+              <h4>Impact</h4>
+              <p>${escapeHtml(i.impact)}</p>
+            </div>
+            ${sourcesHtml ? `
+            <div class="detail-section">
+              <h4>Sources</h4>
+              <ul class="sources-list">${sourcesHtml}</ul>
+            </div>` : ''}
+            ${tagsHtml ? `<div class="tags">${tagsHtml}</div>` : ''}
+          </div>
+        </div>`;
+    }).join('');
+
+    // Preserve the results-count element, then append cards
+    const afterCount = cards || '<div class="no-results"><span class="nr-icon">&#128269;</span><p>No incidents match your filters. Try broadening your search.</p></div>';
+    container.innerHTML = `<div class="results-count" id="results-count">${countEl.textContent}</div>${afterCount}`;
+  }
+
+  init();
+})();
+</script>
+
+</body>
+</html>
