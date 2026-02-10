@@ -33,6 +33,7 @@ Current award categories:
 - `Trust Me, I'm an Algorithm`
 - `The Insider Threats We Made Along the Way`
 - `Achievement Unlocked: Regulatory Action`
+- `Skynet Is Self-Aware`
 
 ## Adding Incidents
 
