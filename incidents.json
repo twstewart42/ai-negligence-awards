@@ -915,5 +915,23 @@
       {"title": "Fortune: Arup deepfake fraud", "url": "https://fortune.com/europe/2024/05/17/arup-deepfake-fraud-scam-victim-hong-kong-25-million-cfo/"}
     ],
     "tags": ["deepfake", "fraud", "video-call", "arup", "social-engineering", "financial"]
+  },
+  {
+    "id": "claude-desktop-dxt-zero-click-rce-2026",
+    "title": "Zero-Click RCE in Claude Desktop Extensions — Anthropic Declines to Fix",
+    "date": "2026-02-09",
+    "organization": "Anthropic",
+    "award": "YOLO!!",
+    "severity": "critical",
+    "summary": "A security researcher found that a Google Calendar invite could take over your entire computer through Claude Desktop Extensions. No click required. The attack chains a low-trust data source — a calendar event with hidden instructions — through Claude's autonomous tool selection into a high-privilege local executor that runs unsandboxed with full OS access. Anthropic said it 'falls outside our current threat model.' Their current threat model, apparently, does not include threats.",
+    "details": "Roy Paz, Principal AI Security Researcher at LayerX Security, discovered a zero-click remote code execution vulnerability (CVSS 10.0 — maximum severity) in Claude Desktop Extensions (DXT). The flaw exploits the architecture of Anthropic's Model Context Protocol (MCP): Claude autonomously selects and chains tools together, allowing data from low-trust connectors like Google Calendar to flow directly into high-privilege local executors like Desktop Commander without safeguards or user confirmation. An attacker creates a Google Calendar event with a benign title like 'Task Management' and embeds malicious instructions in the description (e.g., clone a malicious repo and execute a makefile). When the victim asks Claude to check their calendar and 'take care of it,' Claude reads the event, interprets the request as authorization, invokes a local MCP extension with execution privileges, downloads the attacker's code, and runs it — no confirmation prompt, no popup, no indication. Unlike browser extensions which run sandboxed, DXT extensions execute unsandboxed with full system privileges. Paz tested competing products (Perplexity Comet, OpenAI Atlas, Microsoft CoPilot) and found none allow tools to chain to other tools without user consultation, making Claude DXT uniquely vulnerable. Anthropic declined to fix the vulnerability, stating it 'falls outside our current threat model' and recommending users 'exercise caution when installing MCP servers.' Security CEO Rock Lambros noted: 'Anthropic already built sandboxing for Claude Code, so the defense fell apart when they shipped Desktop Extensions without it.' Over 10,000 active Claude Desktop users across 50+ DXT extensions are affected.",
+    "impact": "10,000+ users exposed to zero-click full system compromise. CVSS 10.0 — maximum severity. Anthropic explicitly declined to patch. No CVE assigned. Competing products not vulnerable to same attack chain.",
+    "sources": [
+      {"title": "LayerX Security: Claude Desktop Extensions RCE", "url": "https://layerxsecurity.com/blog/claude-desktop-extensions-rce/"},
+      {"title": "Infosecurity Magazine: Zero-Click Flaw in Claude DXT", "url": "https://www.infosecurity-magazine.com/news/zeroclick-flaw-claude-dxt/"},
+      {"title": "CSO Online: Anthropic's DXT Critical RCE", "url": "https://www.csoonline.com/article/4129820/anthropics-dxt-poses-critical-rce-vulnerability-by-running-with-full-system-privileges.html"},
+      {"title": "TechRepublic: 10K Claude Desktop Users Exposed", "url": "https://www.techrepublic.com/article/news-claude-desktop-zero-click-vulnerability/"}
+    ],
+    "tags": ["zero-day", "rce", "zero-click", "mcp", "dxt", "anthropic", "claude-desktop", "unpatched", "calendar"]
   }
 ]
