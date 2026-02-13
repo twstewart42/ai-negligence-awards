@@ -19,6 +19,7 @@
     --medium: #d29922;
     --low: #3fb950;
     --link: #58a6ff;
+    --release: #58a6ff;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -87,6 +88,91 @@
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.08em;
+  }
+
+  /* Timeline */
+  .timeline-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem 0.75rem;
+  }
+
+  .timeline-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline {
+    display: flex;
+    align-items: flex-end;
+    gap: 1px;
+    height: 80px;
+    overflow: hidden;
+    padding-bottom: 1.4rem;
+    position: relative;
+  }
+
+  .tl-bar {
+    flex: 1 1 0;
+    min-width: 0;
+    background: var(--accent);
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.15s, opacity 0.15s;
+    opacity: 0.7;
+  }
+
+  .tl-bar:hover, .tl-bar.active {
+    background: var(--gold);
+    opacity: 1;
+  }
+
+  /* Hover tooltip: month + count */
+  .tl-bar::before {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--gold);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    background: var(--surface);
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    z-index: 2;
+  }
+
+  .tl-bar:hover::before {
+    opacity: 1;
+  }
+
+  /* Year labels below the bars */
+  .tl-bar::after {
+    content: attr(data-year-label);
+    position: absolute;
+    bottom: -1.3rem;
+    left: 0;
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .timeline-empty {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 1rem 0;
   }
 
   /* Controls */
@@ -239,6 +325,27 @@
   .severity-high { background: rgba(240, 136, 62, 0.15); color: var(--high); border: 1px solid rgba(240, 136, 62, 0.3); }
   .severity-medium { background: rgba(210, 153, 34, 0.15); color: var(--medium); border: 1px solid rgba(210, 153, 34, 0.3); }
   .severity-low { background: rgba(63, 185, 80, 0.15); color: var(--low); border: 1px solid rgba(63, 185, 80, 0.3); }
+  .severity-release { background: rgba(88, 166, 255, 0.15); color: var(--release); border: 1px solid rgba(88, 166, 255, 0.3); }
+
+  /* Release / milestone cards */
+  .incident-card.release-card {
+    border-color: rgba(88, 166, 255, 0.35);
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.06) 0%, var(--surface) 60%);
+  }
+
+  .incident-card.release-card:hover {
+    border-color: var(--release);
+  }
+
+  .incident-card.release-card .card-title {
+    color: var(--release);
+  }
+
+  .incident-card.release-card .award-badge {
+    background: rgba(88, 166, 255, 0.12);
+    color: var(--release);
+    border-color: rgba(88, 166, 255, 0.3);
+  }
 
   .award-badge {
     background: rgba(245, 200, 66, 0.1);
@@ -389,6 +496,11 @@
   </div>
 </div>
 
+<div class="timeline-wrapper">
+  <div class="timeline-label">Incident Timeline</div>
+  <div class="timeline" id="timeline"></div>
+</div>
+
 <div class="controls">
   <input type="text" class="search-box" id="search" placeholder="Search incidents..." autocomplete="off">
   <select id="filter-award">
@@ -396,6 +508,7 @@
   </select>
   <select id="filter-severity">
     <option value="">All Severities</option>
+    <option value="release">🚀 Releases</option>
     <option value="critical">Critical</option>
     <option value="high">High</option>
     <option value="medium">Medium</option>
@@ -435,8 +548,11 @@
     "Trust Me, I'm an Algorithm": "\uD83E\uDD16",
     "The Insider Threats We Made Along the Way": "\uD83D\uDD75\uFE0F",
     "Achievement Unlocked: Regulatory Action": "\u2696\uFE0F",
-    "Skynet Is Self-Aware": "\u26A0\uFE0F"
+    "Skynet Is Self-Aware": "\u26A0\uFE0F",
+    "The Singularity Has Arrived": "\uD83D\uDE80"
   };
+
+  const RELEASE_AWARD = "The Singularity Has Arrived";
 
   let allIncidents = [];
 
@@ -452,6 +568,7 @@
 
     populateFilters();
     updateStats();
+    buildTimeline();
     render();
 
     document.getElementById('search').addEventListener('input', render);
@@ -496,7 +613,77 @@
     document.getElementById('total-count').textContent = allIncidents.length;
     document.getElementById('org-count').textContent = new Set(allIncidents.map(i => i.organization)).size;
     document.getElementById('critical-count').textContent = allIncidents.filter(i => i.severity === 'critical').length;
-    document.getElementById('billion-count').textContent = '$113B+';
+    document.getElementById('billion-count').textContent = '$1T+';
+  }
+
+  function buildTimeline() {
+    const container = document.getElementById('timeline');
+    if (!allIncidents.length) {
+      container.innerHTML = '<div class="timeline-empty">No data</div>';
+      return;
+    }
+
+    // Aggregate incidents and releases by YYYY-MM
+    const months = {};
+    const releaseMonths = {};
+    allIncidents.forEach(i => {
+      const key = i.date.slice(0, 7); // YYYY-MM
+      months[key] = (months[key] || 0) + 1;
+      if (i.award === RELEASE_AWARD) releaseMonths[key] = (releaseMonths[key] || 0) + 1;
+    });
+
+    // Build a continuous range starting from ChatGPT launch (Nov 2022)
+    const sorted = Object.keys(months).sort();
+    const first = '2022-11';
+    const last = sorted[sorted.length - 1];
+    const allMonths = [];
+    let [y, m] = first.split('-').map(Number);
+    const [ey, em] = last.split('-').map(Number);
+    while (y < ey || (y === ey && m <= em)) {
+      const key = `${y}-${String(m).padStart(2, '0')}`;
+      allMonths.push({ key, count: months[key] || 0, releases: releaseMonths[key] || 0 });
+      m++;
+      if (m > 12) { m = 1; y++; }
+    }
+
+    const maxCount = Math.max(...allMonths.map(m => m.count));
+    const barHeight = 60; // max bar height in px
+    const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+    container.innerHTML = allMonths.map((m, idx) => {
+      const [yr, mo] = m.key.split('-');
+      const moIdx = parseInt(mo, 10) - 1;
+      const tip = m.count ? `${m.count} \u2014 ${monthNames[moIdx]} ${yr}` : '';
+      const yearLabel = moIdx === 0 ? yr : '';
+      const h = m.count ? Math.max(4, Math.round((m.count / maxCount) * barHeight)) : 0;
+      const color = m.releases > 0 ? (m.releases === m.count ? 'var(--release)' : `linear-gradient(to top, var(--accent) ${Math.round((1 - m.releases / m.count) * 100)}%, var(--release) 0%)`) : '';
+      const style = color ? `height:${h}px;background:${color};` : `height:${h}px;`;
+      if (m.count === 0) {
+        return `<div class="tl-bar" data-month="${m.key}" data-tip="" data-year-label="${yearLabel}" style="height:2px;opacity:0.15;cursor:default;"></div>`;
+      }
+      return `<div class="tl-bar" data-month="${m.key}" data-tip="${tip}" data-year-label="${yearLabel}" style="${style}"></div>`;
+    }).join('');
+
+    // Click handler: filter by year when clicking a bar
+    container.addEventListener('click', function(e) {
+      const bar = e.target.closest('.tl-bar');
+      if (!bar || !bar.dataset.tip) return;
+      const month = bar.dataset.month;
+      const year = month.slice(0, 4);
+      const yearSel = document.getElementById('filter-year');
+
+      // Toggle: if already filtering this year, clear it
+      if (yearSel.value === year) {
+        yearSel.value = '';
+        container.querySelectorAll('.tl-bar').forEach(b => b.classList.remove('active'));
+      } else {
+        yearSel.value = year;
+        container.querySelectorAll('.tl-bar').forEach(b => {
+          b.classList.toggle('active', b.dataset.month.startsWith(year));
+        });
+      }
+      render();
+    });
   }
 
   function getFiltered() {
@@ -509,7 +696,8 @@
 
     let filtered = allIncidents.filter(i => {
       if (award && i.award !== award) return false;
-      if (severity && i.severity !== severity) return false;
+      if (severity === 'release') { if (i.award !== RELEASE_AWARD) return false; }
+      else if (severity && i.severity !== severity) return false;
       if (org && i.organization !== org) return false;
       if (year && !i.date.startsWith(year)) return false;
       if (q) {
@@ -560,12 +748,17 @@
         `<span class="tag">${escapeHtml(t)}</span>`
       ).join('');
 
+      const isRelease = i.award === RELEASE_AWARD;
+      const cardClass = isRelease ? 'incident-card release-card' : 'incident-card';
+      const sevClass = isRelease ? 'severity-release' : `severity-${i.severity}`;
+      const sevLabel = isRelease ? 'release' : i.severity;
+
       return `
-        <div class="incident-card" data-id="${escapeHtml(i.id)}">
+        <div class="${cardClass}" data-id="${escapeHtml(i.id)}">
           <div class="card-header" onclick="this.parentElement.classList.toggle('expanded')">
             <div>
               <div class="card-meta">
-                <span class="badge severity-${i.severity}">${i.severity}</span>
+                <span class="badge ${sevClass}">${sevLabel}</span>
                 <span class="award-badge">${icon} ${escapeHtml(i.award)}</span>
                 <span class="org-badge">${escapeHtml(i.organization)}</span>
               </div>
