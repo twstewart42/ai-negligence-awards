@@ -106,36 +106,41 @@
   }
 
   .timeline {
-    display: flex;
-    align-items: flex-end;
-    gap: 1px;
-    height: 80px;
-    overflow: hidden;
-    padding-bottom: 1.4rem;
     position: relative;
+    min-height: 60px;
+    padding-bottom: 1.6rem;
   }
 
-  .tl-bar {
-    flex: 1 1 0;
-    min-width: 0;
-    background: var(--accent);
-    border-radius: 2px 2px 0 0;
-    position: relative;
+  .timeline::after {
+    content: '';
+    position: absolute;
+    bottom: 1.6rem;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .tl-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: background 0.15s, opacity 0.15s;
-    opacity: 0.7;
+    transition: transform 0.15s, opacity 0.15s;
+    opacity: 0.8;
   }
 
-  .tl-bar:hover, .tl-bar.active {
-    background: var(--gold);
+  .tl-dot:hover {
+    transform: scale(2.5);
     opacity: 1;
+    z-index: 10;
   }
 
-  /* Hover tooltip: month + count */
-  .tl-bar::before {
+  .tl-dot::before {
     content: attr(data-tip);
     position: absolute;
-    bottom: calc(100% + 4px);
+    bottom: calc(100% + 6px);
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.6rem;
@@ -146,25 +151,29 @@
     opacity: 0;
     transition: opacity 0.15s;
     background: var(--surface);
-    padding: 2px 5px;
+    padding: 2px 6px;
     border-radius: 3px;
     border: 1px solid var(--border);
-    z-index: 2;
+    z-index: 20;
   }
 
-  .tl-bar:hover::before {
+  .tl-dot:hover::before {
     opacity: 1;
+    transform: translateX(-50%) scale(0.4);
   }
 
-  /* Year labels below the bars */
-  .tl-bar::after {
-    content: attr(data-year-label);
+  .tl-critical { background: var(--critical); }
+  .tl-high { background: var(--high); }
+  .tl-medium { background: var(--medium); }
+  .tl-low { background: var(--low); }
+  .tl-release { background: var(--release); }
+
+  .tl-year {
     position: absolute;
-    bottom: -1.3rem;
-    left: 0;
+    bottom: 0;
     font-size: 0.6rem;
     color: var(--text-muted);
-    white-space: nowrap;
+    transform: translateX(-50%);
     pointer-events: none;
   }
 
@@ -623,64 +632,76 @@
       return;
     }
 
-    // Aggregate incidents and releases by YYYY-MM
-    const months = {};
-    const releaseMonths = {};
-    allIncidents.forEach(i => {
-      const key = i.date.slice(0, 7); // YYYY-MM
-      months[key] = (months[key] || 0) + 1;
-      if (i.award === RELEASE_AWARD) releaseMonths[key] = (releaseMonths[key] || 0) + 1;
-    });
+    // Sort by date
+    const sorted = [...allIncidents].sort((a, b) => a.date.localeCompare(b.date));
 
-    // Build a continuous range starting from ChatGPT launch (Nov 2022)
-    const sorted = Object.keys(months).sort();
-    const first = '2022-11';
-    const last = sorted[sorted.length - 1];
-    const allMonths = [];
-    let [y, m] = first.split('-').map(Number);
-    const [ey, em] = last.split('-').map(Number);
-    while (y < ey || (y === ey && m <= em)) {
-      const key = `${y}-${String(m).padStart(2, '0')}`;
-      allMonths.push({ key, count: months[key] || 0, releases: releaseMonths[key] || 0 });
-      m++;
-      if (m > 12) { m = 1; y++; }
+    // Normalize each incident to the 1st of its month for clean stacking
+    function monthStart(dateStr) {
+      return dateStr.slice(0, 7); // YYYY-MM key
+    }
+    function monthToTime(key) {
+      const [y, m] = key.split('-').map(Number);
+      return new Date(y, m - 1, 1).getTime();
     }
 
-    const maxCount = Math.max(...allMonths.map(m => m.count));
-    const barHeight = 60; // max bar height in px
-    const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    // Collect unique months in order
+    const monthKeys = [...new Set(sorted.map(i => monthStart(i.date)))].sort();
+    const firstMonth = monthToTime(monthKeys[0]);
+    const lastMonth = monthToTime(monthKeys[monthKeys.length - 1]);
+    const monthRange = lastMonth - firstMonth || 1;
+    const pad = monthRange * 0.02;
+    const padStart = firstMonth - pad;
+    const padRange = monthRange + pad * 2;
 
-    container.innerHTML = allMonths.map((m, idx) => {
-      const [yr, mo] = m.key.split('-');
-      const moIdx = parseInt(mo, 10) - 1;
-      const tip = m.count ? `${m.count} \u2014 ${monthNames[moIdx]} ${yr}` : '';
-      const yearLabel = moIdx === 0 ? yr : '';
-      const h = m.count ? Math.max(4, Math.round((m.count / maxCount) * barHeight)) : 0;
-      const color = m.releases > 0 ? (m.releases === m.count ? 'var(--release)' : `linear-gradient(to top, var(--accent) ${Math.round((1 - m.releases / m.count) * 100)}%, var(--release) 0%)`) : '';
-      const style = color ? `height:${h}px;background:${color};` : `height:${h}px;`;
-      if (m.count === 0) {
-        return `<div class="tl-bar" data-month="${m.key}" data-tip="" data-year-label="${yearLabel}" style="height:2px;opacity:0.15;cursor:default;"></div>`;
-      }
-      return `<div class="tl-bar" data-month="${m.key}" data-tip="${tip}" data-year-label="${yearLabel}" style="${style}"></div>`;
+    // Stack dots per month
+    const bins = {};
+    const dots = sorted.map(i => {
+      const mk = monthStart(i.date);
+      const mt = monthToTime(mk);
+      const left = ((mt - padStart) / padRange) * 100;
+      bins[mk] = (bins[mk] || 0);
+      const stackIdx = bins[mk];
+      bins[mk]++;
+      const severity = i.award === RELEASE_AWARD ? 'release' : i.severity;
+      const tip = `${i.title} — ${formatDate(i.date)}`;
+      return { left, bottom: stackIdx * 8, severity, tip, year: i.date.slice(0, 4), id: i.id };
+    });
+
+    // Calculate container height: tallest stack * 8px + baseline space + year labels
+    const maxStack = Math.max(...Object.values(bins));
+    const containerHeight = (maxStack * 8) + 30;
+    container.style.height = containerHeight + 'px';
+
+    // Render dots
+    let html = dots.map(d => {
+      return `<div class="tl-dot tl-${d.severity}" style="left:${d.left.toFixed(2)}%;bottom:${(d.bottom + 26)}px" data-tip="${escapeHtml(d.tip)}" data-year="${d.year}" data-id="${d.id}"></div>`;
     }).join('');
 
-    // Click handler: filter by year when clicking a bar
+    // Render year labels at Jan 1 of each year
+    const startYear = parseInt(monthKeys[0].slice(0, 4), 10);
+    const endYear = parseInt(monthKeys[monthKeys.length - 1].slice(0, 4), 10);
+    for (let y = startYear; y <= endYear; y++) {
+      const jan1 = new Date(y, 0, 1).getTime();
+      const left = ((jan1 - padStart) / padRange) * 100;
+      if (left >= -2 && left <= 102) {
+        html += `<span class="tl-year" style="left:${left.toFixed(2)}%">${y}</span>`;
+      }
+    }
+
+    container.innerHTML = html;
+
+    // Click handler: filter by year when clicking a dot
     container.addEventListener('click', function(e) {
-      const bar = e.target.closest('.tl-bar');
-      if (!bar || !bar.dataset.tip) return;
-      const month = bar.dataset.month;
-      const year = month.slice(0, 4);
+      const dot = e.target.closest('.tl-dot');
+      if (!dot) return;
+      const year = dot.dataset.year;
       const yearSel = document.getElementById('filter-year');
 
       // Toggle: if already filtering this year, clear it
       if (yearSel.value === year) {
         yearSel.value = '';
-        container.querySelectorAll('.tl-bar').forEach(b => b.classList.remove('active'));
       } else {
         yearSel.value = year;
-        container.querySelectorAll('.tl-bar').forEach(b => {
-          b.classList.toggle('active', b.dataset.month.startsWith(year));
-        });
       }
       render();
     });
