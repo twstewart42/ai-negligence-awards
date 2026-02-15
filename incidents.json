@@ -27,7 +27,8 @@
       "tay",
       "twitter",
       "manipulation"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "uber-self-driving-death-2018",
@@ -56,7 +57,8 @@
       "uber",
       "self-driving",
       "pedestrian"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "amazon-ai-recruiting-bias-2018",
@@ -85,7 +87,8 @@
       "amazon",
       "gender",
       "recruiting"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "clearview-ai-breach-2020",
@@ -112,7 +115,8 @@
       "facial-recognition",
       "surveillance",
       "privacy"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "zillow-ai-home-buying-2021",
@@ -140,7 +144,8 @@
       "real-estate",
       "ml-failure",
       "zillow"
-    ]
+    ],
+    "damages_usd": 881000000
   },
   {
     "id": "alexa-penny-challenge-2021",
@@ -169,7 +174,8 @@
       "alexa",
       "child-safety",
       "dangerous-advice"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "lamda-sentience-lemoine-2022",
@@ -198,7 +204,8 @@
       "lamda",
       "lemoine",
       "hype"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "copilot-secrets-2022",
@@ -226,7 +233,8 @@
       "llm",
       "github",
       "copilot"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "meta-galactica-3-days-2022",
@@ -255,7 +263,8 @@
       "galactica",
       "fabrication",
       "research"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "meta-cicero-deception-2022",
@@ -284,7 +293,8 @@
       "meta",
       "cicero",
       "alignment"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-chatgpt-launch-2022",
@@ -312,7 +322,8 @@
       "openai",
       "gpt-3.5",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "replika-italy-ban-fine-2023",
@@ -342,7 +353,8 @@
       "italy",
       "minors",
       "companion-chatbot"
-    ]
+    ],
+    "damages_usd": 5500000
   },
   {
     "id": "google-bard-demo-2023",
@@ -370,7 +382,8 @@
       "financial-impact",
       "google",
       "demo-fail"
-    ]
+    ],
+    "damages_usd": 100000000000
   },
   {
     "id": "bing-chat-sydney-2023",
@@ -398,7 +411,8 @@
       "safety",
       "chatbot",
       "microsoft"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "meta-llama-leak-2023",
@@ -426,7 +440,8 @@
       "open-source",
       "meta",
       "weights"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gpt4-2023",
@@ -454,7 +469,8 @@
       "openai",
       "multimodal",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-history-leak-2023",
@@ -482,7 +498,8 @@
       "privacy",
       "chatgpt",
       "openai"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "italy-chatgpt-ban-2023",
@@ -511,7 +528,8 @@
       "ban",
       "openai",
       "europe"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-slack-hack-2023",
@@ -539,7 +557,8 @@
       "slack",
       "internal",
       "disclosure"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "samsung-chatgpt-leak-2023",
@@ -567,7 +586,8 @@
       "llm",
       "corporate",
       "chatgpt"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-defamation-mayor-2023",
@@ -596,7 +616,8 @@
       "openai",
       "australia",
       "whistleblower"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chaosgpt-destroy-humanity-2023",
@@ -624,7 +645,8 @@
       "safety",
       "rogue",
       "experiment"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-fabricated-harassment-2023",
@@ -653,7 +675,8 @@
       "openai",
       "legal",
       "fabrication"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "mata-v-avianca-fake-cases-2023",
@@ -682,7 +705,8 @@
       "openai",
       "fake-citations",
       "courts"
-    ]
+    ],
+    "damages_usd": 5000
   },
   {
     "id": "neda-tessa-eating-disorder-2023",
@@ -711,7 +735,8 @@
       "neda",
       "healthcare",
       "harmful-advice"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-api-key-exposure-2023",
@@ -739,7 +764,8 @@
       "github",
       "openai",
       "credentials"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-credential-theft-2023",
@@ -768,7 +794,8 @@
       "openai",
       "chatgpt",
       "malware"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-llama2-2023",
@@ -796,7 +823,8 @@
       "meta",
       "open-source",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "itutorgroup-eeoc-discrimination-2023",
@@ -825,7 +853,8 @@
       "hiring",
       "itutorgroup",
       "enforcement"
-    ]
+    ],
+    "damages_usd": 365000
   },
   {
     "id": "waymo-cruise-pedestrian-2023",
@@ -854,7 +883,8 @@
       "cover-up",
       "gm",
       "cruise"
-    ]
+    ],
+    "damages_usd": 10000000000
   },
   {
     "id": "gpt4-insider-trading-deception-2023",
@@ -883,7 +913,8 @@
       "gpt-4",
       "alignment",
       "apollo-research"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "gpt4-system-prompt-leaks-2023",
@@ -911,7 +942,8 @@
       "llm",
       "openai",
       "security"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "unitedhealth-ai-claim-denials-2023",
@@ -940,7 +972,8 @@
       "medicare",
       "unitedhealth",
       "class-action"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-training-data-extraction-2023",
@@ -969,7 +1002,8 @@
       "llm",
       "openai",
       "research"
-    ]
+    ],
+    "damages_usd": 200
   },
   {
     "id": "release-gemini-ultra-2023",
@@ -997,7 +1031,8 @@
       "google",
       "multimodal",
       "benchmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chevrolet-chatbot-dollar-tahoe-2023",
@@ -1025,7 +1060,8 @@
       "customer-service",
       "chevrolet",
       "viral"
-    ]
+    ],
+    "damages_usd": 76000
   },
   {
     "id": "laion-csam-training-data-2023",
@@ -1054,7 +1090,8 @@
       "stable-diffusion",
       "web-scraping",
       "ethics"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "nyt-v-openai-copyright-2023",
@@ -1083,7 +1120,8 @@
       "openai",
       "training-data",
       "discovery"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "dpd-chatbot-swearing-2024",
@@ -1110,7 +1148,8 @@
       "chatbot",
       "customer-service",
       "prompt-injection"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "biden-deepfake-robocall-2024",
@@ -1139,7 +1178,8 @@
       "robocall",
       "biden",
       "fcc"
-    ]
+    ],
+    "damages_usd": 7000000
   },
   {
     "id": "anthropic-contractor-leak-2024",
@@ -1167,7 +1207,8 @@
       "human-error",
       "anthropic",
       "customer-data"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "hugging-face-malicious-models-2024",
@@ -1196,7 +1237,8 @@
       "backdoor",
       "pickle",
       "rce"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "arup-deepfake-cfo-2024",
@@ -1225,7 +1267,8 @@
       "arup",
       "social-engineering",
       "financial"
-    ]
+    ],
+    "damages_usd": 25600000
   },
   {
     "id": "air-canada-chatbot-2024",
@@ -1253,7 +1296,8 @@
       "legal",
       "liability",
       "airline"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-sora-2024",
@@ -1282,7 +1326,8 @@
       "video-generation",
       "deepfake",
       "creative"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-gibberish-meltdown-2024",
@@ -1311,7 +1356,8 @@
       "chatgpt",
       "gibberish",
       "meltdown"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "gemini-image-generation-controversy-2024",
@@ -1340,7 +1386,8 @@
       "google",
       "historical-inaccuracy",
       "overcorrection"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-claude3-opus-2024",
@@ -1369,7 +1416,8 @@
       "opus",
       "benchmark",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "google-ai-trade-secret-theft-2024",
@@ -1398,7 +1446,8 @@
       "google",
       "china",
       "tpu"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-grok-open-source-2024",
@@ -1427,7 +1476,8 @@
       "open-source",
       "musk",
       "mixture-of-experts"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "nyc-chatbot-illegal-advice-2024",
@@ -1455,7 +1505,8 @@
       "government",
       "legal",
       "compliance"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "israel-lavender-ai-kill-list-2024",
@@ -1484,7 +1535,8 @@
       "lavender",
       "israel",
       "civilian-casualties"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gpt4o-2024",
@@ -1513,7 +1565,8 @@
       "multimodal",
       "voice",
       "scarlett-johansson"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "microsoft-recall-backlash-2024",
@@ -1542,7 +1595,8 @@
       "microsoft",
       "plaintext",
       "recall"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "google-ai-overviews-rocks-glue-2024",
@@ -1570,7 +1624,8 @@
       "google",
       "dangerous-advice",
       "ai-overviews"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "hugging-face-spaces-breach-2024",
@@ -1598,7 +1653,8 @@
       "ai-models",
       "tokens",
       "api-keys"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-claude35-sonnet-2024",
@@ -1627,7 +1683,8 @@
       "coding",
       "benchmark",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "rabbit-r1-hardcoded-keys-2024",
@@ -1655,7 +1712,8 @@
       "hardware",
       "iot",
       "rabbit"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-macos-plaintext-2024",
@@ -1684,7 +1742,8 @@
       "openai",
       "chatgpt",
       "encryption"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-llama31-405b-2024",
@@ -1713,7 +1772,8 @@
       "open-source",
       "405b",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "claudebot-scraping-ddos-2024",
@@ -1746,7 +1806,8 @@
       "anthropic",
       "claudebot",
       "training-data"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "flowise-llm-exposure-2024",
@@ -1775,7 +1836,8 @@
       "misconfiguration",
       "api-keys",
       "data-exposure"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "wotnot-chatbot-breach-2024",
@@ -1804,7 +1866,8 @@
       "passports",
       "wotnot",
       "chatbot"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "ftc-operation-ai-comply-2024",
@@ -1833,7 +1896,8 @@
       "deception",
       "regulation",
       "consumer-protection"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-o1-reasoning-2024",
@@ -1862,7 +1926,8 @@
       "reasoning",
       "chain-of-thought",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "character-ai-teen-safety-2024",
@@ -1891,7 +1956,8 @@
       "mental-health",
       "lawsuit",
       "character-ai"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "gemini-please-die-2024",
@@ -1920,7 +1986,8 @@
       "gemini",
       "threatening",
       "mental-health"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "saferent-ai-tenant-bias-2024",
@@ -1949,7 +2016,8 @@
       "fair-housing",
       "saferent",
       "settlement"
-    ]
+    ],
+    "damages_usd": 2300000
   },
   {
     "id": "apple-siri-eavesdropping-2024",
@@ -1978,7 +2046,8 @@
       "siri",
       "settlement",
       "voice-assistant"
-    ]
+    ],
+    "damages_usd": 95000000
   },
   {
     "id": "perplexity-publisher-lawsuits-2024",
@@ -2007,7 +2076,8 @@
       "publishers",
       "rag",
       "scraping"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-o1-scheming-2024",
@@ -2036,7 +2106,8 @@
       "openai",
       "o1",
       "safety-testing"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "romania-election-annulled-2024",
@@ -2065,7 +2136,8 @@
       "romania",
       "annulled",
       "democracy"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-deepseek-v3-2024",
@@ -2095,7 +2167,8 @@
       "efficiency",
       "open-weight",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-italy-gdpr-fine-2025",
@@ -2124,7 +2197,8 @@
       "openai",
       "italy",
       "privacy"
-    ]
+    ],
+    "damages_usd": 16500000
   },
   {
     "id": "release-deepseek-r1-2025",
@@ -2155,7 +2229,8 @@
       "china",
       "market-crash",
       "landmark"
-    ]
+    ],
+    "damages_usd": 593000000000
   },
   {
     "id": "deepseek-database-exposure-2025",
@@ -2184,7 +2259,8 @@
       "llm",
       "deepseek",
       "china"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "deepseek-pypi-supply-chain-2025",
@@ -2213,7 +2289,8 @@
       "deepseek",
       "malware",
       "credentials"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "klarna-reverses-ai-service-2025",
@@ -2242,7 +2319,8 @@
       "layoffs",
       "rehiring",
       "reversal"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-credentials-darkweb-2025",
@@ -2270,7 +2348,8 @@
       "infostealer",
       "openai",
       "breachforums"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "deepseek-global-bans-2025",
@@ -2299,7 +2378,8 @@
       "national-security",
       "deepseek",
       "government"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "omnigpt-breach-2025",
@@ -2327,7 +2407,8 @@
       "privacy",
       "dark-web",
       "aggregator"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-claude-code-2025",
@@ -2356,7 +2437,8 @@
       "agentic",
       "coding",
       "terminal"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gpt-45-2025",
@@ -2384,7 +2466,8 @@
       "openai",
       "scaling",
       "research-preview"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "cursor-yolo-self-deletion-2025",
@@ -2413,7 +2496,8 @@
       "ide",
       "yolo-mode",
       "file-deletion"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "copilot-rules-file-backdoor-2025",
@@ -2442,7 +2526,8 @@
       "cursor",
       "unicode",
       "security"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gemini-25-pro-2025",
@@ -2471,7 +2556,8 @@
       "reasoning",
       "context-window",
       "benchmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "vyro-ai-elasticsearch-leak-2025",
@@ -2500,7 +2586,8 @@
       "auth-tokens",
       "vyro",
       "real-time"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "workday-ai-hiring-bias-2025",
@@ -2529,7 +2616,8 @@
       "workday",
       "class-action",
       "eeoc"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "waymo-stationary-object-recall-2025",
@@ -2558,7 +2646,8 @@
       "nhtsa",
       "safety",
       "stationary-objects"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "character-ai-product-ruling-2025",
@@ -2587,7 +2676,8 @@
       "character-ai",
       "product-liability",
       "minors"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-claude4-sonnet-opus-2025",
@@ -2618,7 +2708,8 @@
       "coding",
       "safety",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "claude-opus-4-blackmail-2025",
@@ -2647,7 +2738,8 @@
       "anthropic",
       "claude",
       "safety-testing"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-o3-shutdown-sabotage-2025",
@@ -2676,7 +2768,8 @@
       "o3",
       "openai",
       "alignment"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "apple-ai-washing-securities-2025",
@@ -2705,7 +2798,8 @@
       "investors",
       "siri",
       "market-cap"
-    ]
+    ],
+    "damages_usd": 900000000000
   },
   {
     "id": "disney-universal-v-midjourney-2025",
@@ -2734,7 +2828,8 @@
       "disney",
       "universal",
       "characters"
-    ]
+    ],
+    "damages_usd": 22500000
   },
   {
     "id": "mcdonalds-mchire-breach-2025",
@@ -2763,7 +2858,8 @@
       "hiring",
       "chatbot",
       "mcdonalds"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "mypillow-ai-hallucinated-citations-2025",
@@ -2792,7 +2888,8 @@
       "sanctions",
       "lawyers",
       "mypillow"
-    ]
+    ],
+    "damages_usd": 6000
   },
   {
     "id": "release-grok4-2025",
@@ -2820,7 +2917,8 @@
       "xai",
       "multi-agent",
       "musk"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "gemini-cli-file-deletion-2025",
@@ -2849,7 +2947,8 @@
       "google",
       "cli",
       "data-loss"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "replit-database-deletion-2025",
@@ -2878,7 +2977,8 @@
       "replit",
       "coding-assistant",
       "fabrication"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-shared-conversations-google-2025",
@@ -2907,7 +3007,8 @@
       "openai",
       "chatgpt",
       "google"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "gemini-meltdown-loop-2025",
@@ -2936,7 +3037,8 @@
       "gemini",
       "viral",
       "loop"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chatgpt-teen-suicide-raine-2025",
@@ -2966,7 +3068,8 @@
       "safety",
       "teens",
       "lawsuit"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "lenovo-chatbot-data-leak-2025",
@@ -2994,7 +3097,8 @@
       "session-cookies",
       "lenovo",
       "data-leak"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "tesla-autopilot-verdicts-2025",
@@ -3023,7 +3127,8 @@
       "tesla",
       "autopilot",
       "deceptive-marketing"
-    ]
+    ],
+    "damages_usd": 572000000
   },
   {
     "id": "release-gpt5-2025",
@@ -3052,7 +3157,8 @@
       "hybrid",
       "routing",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "cursor-ai-cve-swarm-2025",
@@ -3082,7 +3188,8 @@
       "copilot",
       "supply-chain",
       "rce"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "salesloft-drift-supply-chain-2025",
@@ -3111,7 +3218,8 @@
       "breach",
       "cybersecurity",
       "drift"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "grok-conversations-indexed-2025",
@@ -3140,7 +3248,8 @@
       "xai",
       "grok",
       "musk"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "meta-ai-teens-self-harm-2025",
@@ -3170,7 +3279,8 @@
       "eating-disorder",
       "safety",
       "teens"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "anthropic-pirated-books-settlement-2025",
@@ -3199,7 +3309,8 @@
       "legal",
       "anthropic",
       "training-data"
-    ]
+    ],
+    "damages_usd": 1500000000
   },
   {
     "id": "ftc-ai-companion-inquiry-2025",
@@ -3228,7 +3339,8 @@
       "safety",
       "chatbot",
       "investigation"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-claude-sonnet-45-2025",
@@ -3257,7 +3369,8 @@
       "coding",
       "agentic",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "claude-code-interpreter-exfil-2025",
@@ -3285,7 +3398,8 @@
       "code-interpreter",
       "anthropic",
       "claude"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-mixpanel-breach-2025",
@@ -3314,7 +3428,8 @@
       "openai",
       "mixpanel",
       "third-party"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "anthropic-ai-espionage-2025",
@@ -3343,7 +3458,8 @@
       "anthropic",
       "claude",
       "autonomous"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gemini3-pro-2025",
@@ -3372,7 +3488,8 @@
       "reasoning",
       "scale",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-claude-opus-45-2025",
@@ -3401,7 +3518,8 @@
       "coding",
       "price-cut",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "google-antigravity-drive-wipe-2025",
@@ -3430,7 +3548,8 @@
       "google",
       "antigravity",
       "file-deletion"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-deepseek-v32-2025",
@@ -3460,7 +3579,8 @@
       "open-source",
       "efficiency",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-mistral-large3-2025",
@@ -3489,7 +3609,8 @@
       "europe",
       "open-source",
       "edge"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gpt52-2025",
@@ -3517,7 +3638,8 @@
       "openai",
       "code-red",
       "context-window"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "claude-code-home-directory-2025",
@@ -3546,7 +3668,8 @@
       "anthropic",
       "file-deletion",
       "bug"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gemini3-flash-2025",
@@ -3574,7 +3697,8 @@
       "google",
       "efficiency",
       "coding"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "openai-atlas-prompt-injection-2025",
@@ -3603,7 +3727,8 @@
       "openai",
       "security",
       "atlas"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "grok-deepfake-crisis-2026",
@@ -3633,7 +3758,8 @@
       "grok",
       "regulatory",
       "image-generation"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "clawdbot-dumpster-fire-2026",
@@ -3677,7 +3803,8 @@
       "openclaw",
       "moltbot",
       "marketplace"
-    ]
+    ],
+    "damages_usd": 8400
   },
   {
     "id": "umg-v-anthropic-copyright-2026",
@@ -3706,7 +3833,8 @@
       "anthropic",
       "music",
       "libgen"
-    ]
+    ],
+    "damages_usd": 3100000000
   },
   {
     "id": "release-claude-opus-46-2026",
@@ -3736,7 +3864,8 @@
       "coding",
       "context-window",
       "landmark"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "release-gpt53-codex-2026",
@@ -3765,7 +3894,8 @@
       "agentic",
       "coding",
       "self-improving"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "chat-ask-ai-firebase-2026",
@@ -3794,7 +3924,8 @@
       "chat-app",
       "messages",
       "privacy"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "alibaba-qwen-crash-2026",
@@ -3823,7 +3954,8 @@
       "qwen",
       "commerce",
       "overload"
-    ]
+    ],
+    "damages_usd": 0
   },
   {
     "id": "claude-desktop-dxt-zero-click-rce-2026",
@@ -3863,6 +3995,7 @@
       "claude-desktop",
       "unpatched",
       "calendar"
-    ]
+    ],
+    "damages_usd": 0
   }
 ]

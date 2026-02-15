@@ -622,7 +622,13 @@
     document.getElementById('total-count').textContent = allIncidents.length;
     document.getElementById('org-count').textContent = new Set(allIncidents.map(i => i.organization)).size;
     document.getElementById('critical-count').textContent = allIncidents.filter(i => i.severity === 'critical').length;
-    document.getElementById('billion-count').textContent = '$1T+';
+    const totalDamages = allIncidents.reduce((sum, i) => sum + (i.damages_usd || 0), 0);
+    let damagesStr;
+    if (totalDamages >= 1e12) damagesStr = '$' + (totalDamages / 1e12).toFixed(1) + 'T+';
+    else if (totalDamages >= 1e9) damagesStr = '$' + (totalDamages / 1e9).toFixed(0) + 'B+';
+    else if (totalDamages >= 1e6) damagesStr = '$' + (totalDamages / 1e6).toFixed(0) + 'M+';
+    else damagesStr = '$' + totalDamages.toLocaleString();
+    document.getElementById('billion-count').textContent = damagesStr;
   }
 
   function buildTimeline() {
