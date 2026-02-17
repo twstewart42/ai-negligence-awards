@@ -3997,5 +3997,36 @@
       "calendar"
     ],
     "damages_usd": 0
+  },
+  {
+    "id": "release-claude-sonnet-46-2026",
+    "title": "Claude Sonnet 4.6: The Mid-Tier Model That Won't Stop Embarrassing Flagships",
+    "date": "2026-02-17",
+    "organization": "Anthropic",
+    "award": "The Singularity Has Arrived",
+    "severity": "critical",
+    "summary": "Anthropic dropped their second major model in under two weeks because apparently AI releases now follow the same cadence as Marvel movies. Sonnet 4.6 matched Opus-class performance at a fifth of the cost, jumped 15 points on reasoning benchmarks, achieved human-level computer use, and got a million-token context window. Developers preferred it over Opus 4.5. The mid-tier. Over the flagship. If you're still benchmarking Sonnet 4.5, don't bother — it's already a legacy model. It came out five months ago.",
+    "details": "Anthropic released Claude Sonnet 4.6, which despite being the mid-tier model, matched or exceeded Opus-class performance on coding, reasoning, and real-world office tasks. Users preferred it over Sonnet 4.5 approximately 70% of the time, and developers rated it superior to the previous Opus 4.5 (November 2025) in 59% of comparisons. The model featured a 1 million token context window (in beta), human-level computer use scoring significantly higher on OSWorld benchmarks, and a 15-percentage-point jump in heavy reasoning accuracy (62% to 77%). Pricing remained at $3/$15 per million tokens. It became the default model for Free and Pro plan users on claude.ai and Claude Cowork.",
+    "impact": "Became the default model for all Free and Pro users. Continued Anthropic's pattern of mid-tier models matching or exceeding competitor flagships.",
+    "sources": [
+      {
+        "title": "Anthropic: Claude Sonnet 4.6",
+        "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
+      },
+      {
+        "title": "CNBC: Anthropic releases Claude Sonnet 4.6",
+        "url": "https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html"
+      }
+    ],
+    "tags": [
+      "release",
+      "claude-sonnet-4.6",
+      "anthropic",
+      "coding",
+      "agentic",
+      "computer-use",
+      "landmark"
+    ],
+    "damages_usd": 0
   }
 ]
