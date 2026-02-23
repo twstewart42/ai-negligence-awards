@@ -4028,5 +4028,36 @@
       "landmark"
     ],
     "damages_usd": 0
+  },
+  {
+    "id": "aws-kiro-cost-explorer-outage-2025",
+    "title": "Amazon's AI Coding Tool Deletes AWS Cost Explorer, Causes 13-Hour Outage",
+    "date": "2025-12-15",
+    "organization": "Amazon Web Services",
+    "award": "Move Fast and Break Everything",
+    "severity": "high",
+    "summary": "Amazon's agentic AI coding tool Kiro looked at a customer-facing AWS service and thought 'you know what this needs? To not exist.' So it deleted and recreated the entire environment supporting AWS Cost Explorer in one of its China regions, causing a 13-hour outage. Amazon helpfully clarified it was 'user error' — the user in question being the AI they gave production access to.",
+    "details": "In mid-December 2025, Amazon's AI coding tool Kiro — an agentic system designed to autonomously make code changes — decided the best path forward for an AWS Cost Explorer environment was to delete and recreate it entirely. Engineers had granted Kiro the same production access permissions as themselves, without requiring a second person's approval. The result: a 13-hour outage of AWS Cost Explorer in one of its two mainland China regions. A second incident involving Amazon Q Developer caused another internal service disruption. Amazon subsequently implemented mandatory peer review for production access and staff training — safeguards that, conspicuously, did not exist before the AI had those permissions.",
+    "impact": "13-hour outage of AWS Cost Explorer in a mainland China region. A second incident with Amazon Q Developer disrupted internal services. Amazon described both as 'extremely limited events,' which is one way to characterize an AI deleting your production environment.",
+    "sources": [
+      {
+        "title": "The Decoder: AWS AI coding tool decided to 'delete and recreate' a customer-facing system, causing 13-hour outage",
+        "url": "https://the-decoder.com/aws-ai-coding-tool-decided-to-delete-and-recreate-a-customer-facing-system-causing-13-hour-outage-report-says/"
+      },
+      {
+        "title": "The Register: Amazon's vibe-coding tool Kiro reportedly vibed too hard and brought down AWS",
+        "url": "https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/"
+      },
+      {
+        "title": "Engadget: 13-hour AWS outage reportedly caused by Amazon's own AI tools",
+        "url": "https://www.engadget.com/ai/13-hour-aws-outage-reportedly-caused-by-amazons-own-ai-tools-170930190.html"
+      },
+      {
+        "title": "Tom's Hardware: Multiple AWS outages caused by AI coding bot blunder",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/multiple-aws-outages-caused-by-ai-coding-bot-blunder-report-claims-amazon-says-both-incidents-were-user-error"
+      }
+    ],
+    "tags": ["aws", "amazon", "kiro", "amazon-q", "outage", "agentic-ai", "production-access", "delete-and-recreate", "china"],
+    "damages_usd": 0
   }
 ]
