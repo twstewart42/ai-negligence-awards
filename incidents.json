@@ -4061,29 +4061,6 @@
     "damages_usd": 0
   },
   {
-    "id": "chat-ask-ai-firebase-breach-2026",
-    "title": "AI Chat App Leaves 300 Million Private Messages Wide Open",
-    "date": "2026-02-01",
-    "organization": "Codeway (Chat & Ask AI)",
-    "award": "Oops, Was That Public?",
-    "severity": "high",
-    "summary": "Chat & Ask AI, a popular wrapper app sitting atop ChatGPT, Claude, and Gemini with 50 million users, misconfigured its Firebase database so thoroughly that anyone on the internet could read, modify, or delete 300 million private messages from 25 million users — no authentication required. A researcher who built a tool to scan for this exact type of misconfiguration found it on 103 of 200 iOS apps he checked. Turns out 'set Security Rules to not-public' is optional step that many skip.",
-    "details": "An independent security researcher known as 'Harry' built a scanning tool for Firebase Security Rule misconfigurations and ran it against popular iOS apps. Chat & Ask AI — a multi-LLM wrapper app developed by Codeway that routes user queries to ChatGPT, Claude, and Gemini — had left its Firebase database publicly accessible with no authentication controls. The exposed data included 300 million messages from over 25 million users, including chat histories, model preferences, user settings, and conversations covering sensitive topics including illegal activities and suicide. The researcher practiced responsible disclosure; Codeway fixed the issue within hours of notification. The scan also revealed the problem was endemic: 103 out of 200 iOS apps tested had the same misconfiguration, collectively exposing tens of millions of stored files.",
-    "impact": "300 million private chat messages from 25 million users exposed without authentication. Conversations included sensitive disclosures. Other Codeway apps were also affected. 103 of 200 iOS apps tested by the researcher had the same Firebase misconfiguration.",
-    "sources": [
-      {
-        "title": "Malwarebytes: AI chat app leak exposes 300 million messages tied to 25 million users",
-        "url": "https://www.malwarebytes.com/blog/news/2026/02/ai-chat-app-leak-exposes-300-million-messages-tied-to-25-million-users"
-      },
-      {
-        "title": "GBHackers: 25 Million Users Affected as AI Chat Platform Leaks 300 Million Messages",
-        "url": "https://gbhackers.com/ai-chat-platform-leaks-300-million-messages/"
-      }
-    ],
-    "tags": ["firebase", "misconfiguration", "data-breach", "chat", "privacy", "ios", "llm-wrapper"],
-    "damages_usd": 0
-  },
-  {
     "id": "idmerit-kyc-breach-2025",
     "title": "AI Identity Verification Firm Exposes 1 Billion KYC Records in Unprotected Database",
     "date": "2025-11-11",
@@ -4132,5 +4109,32 @@
     ],
     "tags": ["openai", "chatgpt", "lawsuit", "mental-health", "psychological-harm", "dependency", "hallucination", "product-liability"],
     "damages_usd": 0
+  },
+  {
+    "id": "builderai-human-fraud-2025",
+    "title": "Builder.ai's $1.5B AI Unicorn Was 700 Humans in India the Whole Time",
+    "date": "2025-05-01",
+    "organization": "Builder.ai",
+    "award": "Trust Me, I'm an Algorithm",
+    "severity": "critical",
+    "summary": "Builder.ai raised $700 million from Microsoft, SoftBank, and the Qatar Investment Authority on the strength of 'Natasha,' an AI that could build apps six times faster and 70% cheaper than traditional development. Natasha was 700 engineers in India manually writing code. The company's CEO called himself 'Chief Wizard.' The company called itself a $2.3 billion unicorn. The investors called their lawyers.",
+    "details": "Founded in 2016 by Sachin Dev Duggal (self-styled 'Chief Wizard'), Builder.ai marketed its product as a no-code AI platform powered by 'Natasha' — an AI assistant that could assemble software from reusable building blocks at a fraction of typical cost and time. In reality, former employees confirmed that the platform's output was produced by approximately 700 human developers in India, not by any AI system. The deception extended to financials: a Bloomberg investigation revealed the company had engaged in 'roundtripping' with Indian startup VerSe Innovation to artificially inflate revenues by up to 400%. Builder.ai attracted $700 million in funding, reaching a $2.3 billion valuation, with Microsoft integrating the product into Teams and SoftBank and the Qatar Investment Authority among major backers. In May 2025, creditor Viola Credit demanded repayment of a $77 million loan after uncovering financial irregularities, triggering bankruptcy. US federal prosecutors subsequently opened a criminal investigation into investor fraud.",
+    "impact": "$700 million raised from investors under false pretenses. Microsoft, SoftBank, and the Qatar Investment Authority among those defrauded. US federal criminal investigation opened. Company declared bankruptcy in May 2025. Hundreds of employees and customers left stranded.",
+    "sources": [
+      {
+        "title": "ACS: The company whose 'AI' was actually 700 humans in India",
+        "url": "https://ia.acs.org.au/article/2025/the-company-whose--ai--was-actually-700-humans-in-india.html"
+      },
+      {
+        "title": "People Matters: AI fraud — 700 Indian engineers did the work while Builder.ai claimed it was AI",
+        "url": "https://www.peoplematters.in/news/startups/ai-fraud-700-indian-engineers-did-the-work-while-builderai-claimed-it-was-ai-45865"
+      },
+      {
+        "title": "DevOps.com: This Bankrupt AI Startup Was More Artificial Than Intelligent",
+        "url": "https://devops.com/this-bankrupt-ai-startup-was-more-artificial-than-intelligent/"
+      }
+    ],
+    "tags": ["fraud", "fake-ai", "investor-fraud", "bankruptcy", "microsoft", "softbank", "human-in-the-loop", "criminal-investigation"],
+    "damages_usd": 700000000
   }
 ]
