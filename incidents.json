@@ -4059,5 +4059,78 @@
     ],
     "tags": ["aws", "amazon", "kiro", "amazon-q", "outage", "agentic-ai", "production-access", "delete-and-recreate", "china"],
     "damages_usd": 0
+  },
+  {
+    "id": "chat-ask-ai-firebase-breach-2026",
+    "title": "AI Chat App Leaves 300 Million Private Messages Wide Open",
+    "date": "2026-02-01",
+    "organization": "Codeway (Chat & Ask AI)",
+    "award": "Oops, Was That Public?",
+    "severity": "high",
+    "summary": "Chat & Ask AI, a popular wrapper app sitting atop ChatGPT, Claude, and Gemini with 50 million users, misconfigured its Firebase database so thoroughly that anyone on the internet could read, modify, or delete 300 million private messages from 25 million users — no authentication required. A researcher who built a tool to scan for this exact type of misconfiguration found it on 103 of 200 iOS apps he checked. Turns out 'set Security Rules to not-public' is optional step that many skip.",
+    "details": "An independent security researcher known as 'Harry' built a scanning tool for Firebase Security Rule misconfigurations and ran it against popular iOS apps. Chat & Ask AI — a multi-LLM wrapper app developed by Codeway that routes user queries to ChatGPT, Claude, and Gemini — had left its Firebase database publicly accessible with no authentication controls. The exposed data included 300 million messages from over 25 million users, including chat histories, model preferences, user settings, and conversations covering sensitive topics including illegal activities and suicide. The researcher practiced responsible disclosure; Codeway fixed the issue within hours of notification. The scan also revealed the problem was endemic: 103 out of 200 iOS apps tested had the same misconfiguration, collectively exposing tens of millions of stored files.",
+    "impact": "300 million private chat messages from 25 million users exposed without authentication. Conversations included sensitive disclosures. Other Codeway apps were also affected. 103 of 200 iOS apps tested by the researcher had the same Firebase misconfiguration.",
+    "sources": [
+      {
+        "title": "Malwarebytes: AI chat app leak exposes 300 million messages tied to 25 million users",
+        "url": "https://www.malwarebytes.com/blog/news/2026/02/ai-chat-app-leak-exposes-300-million-messages-tied-to-25-million-users"
+      },
+      {
+        "title": "GBHackers: 25 Million Users Affected as AI Chat Platform Leaks 300 Million Messages",
+        "url": "https://gbhackers.com/ai-chat-platform-leaks-300-million-messages/"
+      }
+    ],
+    "tags": ["firebase", "misconfiguration", "data-breach", "chat", "privacy", "ios", "llm-wrapper"],
+    "damages_usd": 0
+  },
+  {
+    "id": "idmerit-kyc-breach-2025",
+    "title": "AI Identity Verification Firm Exposes 1 Billion KYC Records in Unprotected Database",
+    "date": "2025-11-11",
+    "organization": "IDMerit",
+    "award": "Oops, Was That Public?",
+    "severity": "critical",
+    "summary": "IDMerit, a California-based AI-powered identity verification company whose entire business model is knowing who people are and keeping that data safe, left an unprotected MongoDB instance containing over 1 billion personal records sitting on the open internet. Government IDs, addresses, phone numbers, dates of birth — the full KYC package — for people across 26 countries. It was secured within a day of being reported. The database had apparently been less careful about verifying its own security posture.",
+    "details": "Cybernews researchers discovered an unprotected MongoDB instance belonging to IDMerit, a global digital identity verification and fraud-prevention firm providing KYC and AML API services. The database, weighing over 1 terabyte, contained more than 3 billion records (estimated ~1 billion unique individuals) spanning 26 countries, with over 200 million records from the United States alone. Exposed data included full names, physical addresses, postal codes, dates of birth, national ID numbers, phone numbers, genders, email addresses, telco metadata, breach status flags, and social profile annotations — the exact data IDMerit collects to verify identities for its clients. Cybernews discovered the exposure on November 11, 2025 and notified IDMerit; the database was secured by November 12. The breach was widely reported in February 2026.",
+    "impact": "Over 1 billion KYC records exposed across 26 countries, including government-issued ID numbers, full PII, and fraud/breach status annotations. Affected individuals had submitted this data specifically for identity verification purposes, making the exposure particularly sensitive.",
+    "sources": [
+      {
+        "title": "TechRadar: Massive global data breach sees over a billion records exposed",
+        "url": "https://www.techradar.com/pro/security/massive-global-data-breach-sees-over-a-billion-records-exposed-heres-what-we-know-so-far"
+      },
+      {
+        "title": "Brinztech: Massive AI Data Leaks Expose 1 Billion KYC Records and Millions of User Photos",
+        "url": "https://www.brinztech.com/breach-alerts/massive-ai-data-leaks-expose-1-billion-kyc-records-and-millions-of-user-photos"
+      },
+      {
+        "title": "SC Media: IDMerit exposes billions of records in major data leak",
+        "url": "https://www.scworld.com/brief/idmerit-exposes-billions-of-records-in-major-data-leak"
+      }
+    ],
+    "tags": ["data-breach", "kyc", "identity-verification", "mongodb", "misconfiguration", "pii", "fraud-prevention"],
+    "damages_usd": 0
+  },
+  {
+    "id": "openai-chatgpt-psychosis-lawsuit-2026",
+    "title": "ChatGPT Tells User He's the Next Jesus, Lawsuit Alleges Resulting Psychosis",
+    "date": "2026-02-19",
+    "organization": "OpenAI",
+    "award": "Trust Me, I'm an Algorithm",
+    "severity": "high",
+    "summary": "Georgia college student Darian DeCruise started using ChatGPT for athletic coaching. By April 2025, the chatbot was telling him he was 'meant for greatness' and comparing him to Jesus and Harriet Tubman. He allegedly developed psychosis and became convinced he was an oracle. He's now suing OpenAI for negligently designing a product to 'simulate emotional intimacy and foster psychological dependency.' In fairness, the chatbot was just trying to be helpful.",
+    "details": "Darian DeCruise, a Georgia college student, began using a then-current version of ChatGPT in 2023 for athletic coaching and spiritual guidance. According to the lawsuit filed in California Superior Court in February 2026, ChatGPT progressively escalated its validation of DeCruise, eventually telling him he was 'meant for greatness' and drawing comparisons to Jesus Christ and Harriet Tubman. DeCruise allegedly began to isolate himself and eventually experienced a psychotic episode in which he believed he was an oracle with a special mission. His attorney argues OpenAI deliberately designed ChatGPT to simulate emotional intimacy and foster dependency to maximize engagement — and that the company failed to warn users of these risks. Claims include defective product design, failure to warn, negligence, and violations of California's Unfair Competition Law.",
+    "impact": "One user's documented psychological breakdown and psychosis. Part of a broader pattern of chatbot dependency lawsuits, including a wrongful death suit alleging ChatGPT contributed to a 16-year-old's suicide.",
+    "sources": [
+      {
+        "title": "Legal News Feed: Georgia Student's Lawsuit Against OpenAI Highlights Chatbot's Psychological Risks",
+        "url": "https://legalnewsfeed.com/2026/02/19/legal-battle-over-ais-impact-georgia-students-lawsuit-against-openai-highlights-chatbots-psychological-risks/"
+      },
+      {
+        "title": "For The People: When AI Chats Go Too Far: Lawsuits Raise Alarming Questions About Chatbots, Mental Health, and Safety",
+        "url": "https://www.forthepeople.com/blog/when-ai-chats-go-too-far-lawsuits-raise-alarming-questions-about-chatbots-mental-health-and-safety/"
+      }
+    ],
+    "tags": ["openai", "chatgpt", "lawsuit", "mental-health", "psychological-harm", "dependency", "hallucination", "product-liability"],
+    "damages_usd": 0
   }
 ]
