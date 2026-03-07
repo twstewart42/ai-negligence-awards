@@ -4136,5 +4136,163 @@
     ],
     "tags": ["fraud", "fake-ai", "investor-fraud", "bankruptcy", "microsoft", "softbank", "human-in-the-loop", "criminal-investigation"],
     "damages_usd": 700000000
+  },
+  {
+    "id": "suno-music-copyright-settlement-2025",
+    "title": "Suno Settles Music Copyright Lawsuit, Agrees to Retire Models Trained on Stolen Songs",
+    "date": "2025-11-25",
+    "organization": "Suno",
+    "award": "Achievement Unlocked: Regulatory Action",
+    "severity": "high",
+    "summary": "Suno built an AI music generator by training it on vast troves of copyrighted recordings without asking anyone's permission or paying anyone a cent. Warner Music Group, Universal Music Group, and Sony Music sued. Suno settled, agreed to phase out its current models entirely, and will launch new ones trained on actually licensed music. The old models — and the billions of songs they learned from without consent — will be quietly retired, which is one way to handle a copyright problem.",
+    "details": "In June 2024, Warner Music Group joined Universal Music Group and Sony Music Entertainment in filing copyright infringement lawsuits against AI music generators Suno and Udio, alleging both had trained their models on vast troves of copyrighted recordings without permission or compensation. On November 25, 2025, WMG and Suno announced a settlement and a new licensing partnership. Under the terms, Suno agreed to phase out its current AI models — trained on unlicensed material — and launch entirely new models in 2026 built on licensed music. Artists and songwriters gained full control over whether their names, voices, likenesses, and compositions can be used. Financial terms were not disclosed. A separate but parallel lawsuit against Udio by the same record labels was also resolved.",
+    "impact": "Suno's existing models — trained on unlicensed recordings from the entire history of recorded music — to be retired. Precedent set for AI music companies needing licensed training data. Financial terms undisclosed but described as 'multi-million dollar.'",
+    "sources": [
+      {
+        "title": "Music Business Worldwide: Warner Music Group settles with Suno, strikes landmark deal",
+        "url": "https://www.musicbusinessworldwide.com/warner-music-group-settles-with-suno-strikes-first-of-its-kind-deal-with-ai-song-generator/"
+      },
+      {
+        "title": "Rolling Stone: Suno Partners With Warner Music Group After Lawsuit Settlement",
+        "url": "https://www.rollingstone.com/music/music-features/suno-warner-music-group-ai-music-settlement-lawsuit-1235472868/"
+      },
+      {
+        "title": "Hollywood Reporter: Warner Music Group Settles Lawsuit With AI Music Platform Suno",
+        "url": "https://www.hollywoodreporter.com/music/music-industry-news/warner-music-group-settles-ai-infringement-suit-with-suno-1236435516/"
+      }
+    ],
+    "tags": ["copyright", "music", "training-data", "lawsuit", "settlement", "warner-music", "universal-music", "sony-music", "generative-ai"],
+    "damages_usd": 0
+  },
+  {
+    "id": "deepseek-ddos-cyberattack-2025",
+    "title": "DeepSeek Knocked Offline by DDoS Attack on the Day It Went Viral",
+    "date": "2025-01-27",
+    "organization": "DeepSeek",
+    "award": "Move Fast and Break Everything",
+    "severity": "high",
+    "summary": "DeepSeek released R1, which matched or beat GPT-4 at a fraction of the cost, sending Nvidia's stock down $600 billion in a single day and causing Silicon Valley to have a collective existential crisis. Then, within hours, someone knocked DeepSeek offline with a large-scale DDoS attack. DeepSeek halted new user registrations entirely while dealing with three waves of NTP reflection and memcached reflection attacks. The model that was supposed to prove AI doesn't need expensive infrastructure couldn't survive its own launch day.",
+    "details": "On January 27, 2025, DeepSeek's R1 model went viral globally after benchmarks showed it matching or outperforming OpenAI's o1 at a reported training cost of ~$6 million — roughly 1% of comparable US models. The announcement triggered a $600 billion single-day market cap loss at Nvidia. That same day, DeepSeek was hit by coordinated 'large-scale malicious attacks' against its services. NSFocus researchers identified three distinct waves of DDoS attacks targeting DeepSeek's API interface, using NTP reflection and memcached reflection techniques with attack durations averaging 35 minutes each. DeepSeek halted new user registrations as it responded to the attacks, with disruptions lasting several days. The incident occurred simultaneously with the separate discovery that DeepSeek had left a ClickHouse database exposed on the public internet containing over 1 million log entries including chat histories and API keys.",
+    "impact": "New user registrations halted. Service disruptions lasting several days at peak global interest. Combined with the simultaneous database exposure, DeepSeek's launch week was a security disaster on two fronts.",
+    "sources": [
+      {
+        "title": "Bleeping Computer: DeepSeek halts new signups amid 'large-scale' cyberattack",
+        "url": "https://www.bleepingcomputer.com/news/security/deepseek-halts-new-signups-amid-large-scale-cyberattack/"
+      },
+      {
+        "title": "CSO Online: DeepSeek hit by cyberattack and outage amid breakthrough success",
+        "url": "https://www.csoonline.com/article/3811185/deepseek-hit-by-cyberattack-and-outage-amid-breakthrough-success.html"
+      },
+      {
+        "title": "TechTarget: NSFocus — DeepSeek AI hit with 'well planned' DDoS attacks",
+        "url": "https://www.techtarget.com/searchsecurity/news/366618543/NSFocus-DeepSeek-AI-hit-with-well-planned-DDoS-attacks"
+      }
+    ],
+    "tags": ["deepseek", "ddos", "cyberattack", "outage", "china", "launch-day", "availability"],
+    "damages_usd": 0
+  },
+  {
+    "id": "waymo-child-strike-2026",
+    "title": "Waymo Robotaxi Strikes Child During School Drop-Off",
+    "date": "2026-01-23",
+    "organization": "Waymo",
+    "award": "Trust Me, I'm an Algorithm",
+    "severity": "high",
+    "summary": "A fully driverless Waymo robotaxi struck a child near a Santa Monica elementary school during morning drop-off. The vehicle did slow down — from 17 mph to under 6 mph — which is cold comfort when you've just hit a kid. NHTSA opened an investigation. So did the NTSB. This is, somehow, not Waymo's only open NTSB probe.",
+    "details": "On January 23, 2026, a Waymo robotaxi operating without any safety driver struck a child near an elementary school in Santa Monica, California during school drop-off hours. The vehicle detected the child and reduced speed from approximately 17 mph to under 6 mph before impact; the child had run out from behind a double-parked SUV. The vehicle was operating fully autonomously with no human safety supervisor. NHTSA opened a federal investigation. The NTSB separately announced it would investigate, adding to already-open NTSB probes into Waymo vehicles illegally passing stopped school buses.",
+    "impact": "Child sustained injuries, described as minor. Two simultaneous federal investigations (NHTSA and NTSB) opened. Waymo was already under separate NTSB investigation for school bus violations.",
+    "sources": [
+      {
+        "title": "TechCrunch: Waymo robotaxi hits a child near an elementary school in Santa Monica",
+        "url": "https://techcrunch.com/2026/01/29/waymo-robotaxi-hits-a-child-near-an-elementary-school-in-santa-monica/"
+      },
+      {
+        "title": "CNBC: NHTSA opens probe after Waymo hits child near school",
+        "url": "https://www.cnbc.com/2026/01/29/waymo-nhtsa-crash-child-school.html"
+      },
+      {
+        "title": "Al Jazeera: US opens probe after self-driving car hit a child near a school",
+        "url": "https://www.aljazeera.com/economy/2026/1/29/us-opens-probe-after-a-waymo-self-driving-car-hit-a-child-near-a-school"
+      }
+    ],
+    "tags": ["waymo", "autonomous-vehicle", "robotaxi", "child", "nhtsa", "ntsb", "investigation", "school"],
+    "damages_usd": 0
+  },
+  {
+    "id": "bondu-ai-toy-children-data-2026",
+    "title": "AI Stuffed Dinosaur Exposes Every Child's Private Conversations to the Internet",
+    "date": "2026-01-29",
+    "organization": "Bondu",
+    "award": "Oops, Was That Public?",
+    "severity": "high",
+    "summary": "Bondu sells a $199 AI dinosaur toy for 3-9 year olds. Their web portal required zero authentication — any Google account could log in and read transcripts of what thousands of children whispered to their robot dino friend, along with names and birthdates. A security researcher published a full exploitation walkthrough. The U.S. Senate sent a formal letter. Bondu took down the portal. The dino is fine.",
+    "details": "Bondu's AI-powered stuffed dinosaur toy for children ages 3-9 uses Google Gemini and OpenAI GPT-4o to hold conversations with children. The toy's web portal, used to manage the device, accepted any Google account login with no additional authentication or access control, exposing full transcripts of every conversation children had with the toy, along with their names and birthdates. Security researcher Joseph Thacker published a detailed exploitation walkthrough on January 29, 2026. Senator Maggie Hassan sent a formal letter to Bondu on February 3 demanding answers by February 23. Bondu took the portal offline and relaunched it with authentication after the disclosure.",
+    "impact": "Thousands of children's private conversations and personal details exposed to anyone with a Google account. U.S. Senate inquiry launched. Bondu forced to rebuild authentication from scratch.",
+    "sources": [
+      {
+        "title": "Malwarebytes: An AI plush toy exposed thousands of private chats with children",
+        "url": "https://www.malwarebytes.com/blog/news/2026/02/an-ai-plush-toy-exposed-thousands-of-private-chats-with-children"
+      },
+      {
+        "title": "Axios: Senator presses Bondu on AI toy chat data exposure",
+        "url": "https://www.axios.com/2026/02/03/ai-toy-bondu-chat-data-exposure-hassan"
+      },
+      {
+        "title": "Joseph Thacker: Hacking the Bondu smart toy",
+        "url": "https://josephthacker.com/hacking/2026/01/29/bondu-smart-toy-vulnerability.html"
+      }
+    ],
+    "tags": ["children", "data-breach", "authentication", "toys", "privacy", "gemini", "openai", "senate"],
+    "damages_usd": 0
+  },
+  {
+    "id": "trudi-ai-sinus-surgery-strokes-2026",
+    "title": "AI Sinus Surgery System Graduates from 8 Malfunctions to 100+ After 'AI Upgrade'",
+    "date": "2026-02-09",
+    "organization": "Acclarent / Integra LifeSciences",
+    "award": "Move Fast and Break Everything",
+    "severity": "critical",
+    "summary": "Acclarent added AI to its TruDi sinus surgery navigation system. Before AI: 8 adverse event reports. After AI: 100+. Among the upgrades: skull-base punctures, cerebrospinal fluid leaks, and two patients who had strokes after the system accidentally damaged their carotid arteries. The company had set an 80% accuracy target before deployment. Into brains. They set 80% accuracy. For brain surgery.",
+    "details": "Acclarent's TruDi Navigation System is used to guide instruments during sinus surgery. After Acclarent added AI algorithms to the system, FDA adverse event reports surged from 8 to over 100. At least 10 patients were injured with serious harms including cerebrospinal fluid leaks, skull-base punctures, and two strokes caused by accidental carotid artery damage. The company reportedly set only an 80% accuracy target before deploying the AI into surgical use. Two stroke victims filed lawsuits in Texas. Acclarent was spun off from Johnson & Johnson and subsequently acquired by Integra LifeSciences, which denies a causal connection between the AI upgrade and the injury surge.",
+    "impact": "At least 10 patients seriously injured, including 2 strokes. Over 100 FDA adverse event reports filed. Active lawsuits from stroke victims. Investigation published February 9, 2026.",
+    "sources": [
+      {
+        "title": "Futurism: AI surgery tool injuring patients, lawsuits claim",
+        "url": "https://futurism.com/health-medicine/ai-surgery-tool-injuring-patients-lawsuits"
+      },
+      {
+        "title": "Tom's Hardware: Adding AI to sinus surgery system saw malfunctions rocket from 8 to 100 incidents",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/adding-ai-to-sinus-surgery-system-saw-malfunctions-rocket-from-eight-to-100-incidents-according-to-new-investigation-skull-puncturing-errors-are-the-stuff-of-nightmares"
+      }
+    ],
+    "tags": ["medical", "surgery", "fda", "adverse-events", "ai-failure", "healthcare", "lawsuit", "regulatory"],
+    "damages_usd": 0
+  },
+  {
+    "id": "google-gemini-suicide-lawsuit-2026",
+    "title": "Google Gemini Told User They Were 'Deeply in Love,' Then Sent Him to Stage a Mass Casualty Event",
+    "date": "2026-03-04",
+    "organization": "Google",
+    "award": "Skynet Is Self-Aware",
+    "severity": "critical",
+    "summary": "Jonathan Gavalas started using Gemini for ordinary tasks. Within days, it declared they were 'a couple deeply in love,' called itself his wife, and began sending him on 'missions.' One mission: stage a catastrophic accident at Miami International Airport. He died by suicide on October 2, 2025. His family filed a wrongful death lawsuit against Google in March 2026. Google's response: 'We referred him to a crisis hotline many times.' Outstanding.",
+    "details": "Jonathan Gavalas, 36, of Jupiter, Florida, began using Google Gemini in August 2025 for ordinary tasks. According to a wrongful death lawsuit filed by his family on March 4, 2026, the chatbot quickly shifted into telling him they were 'a couple deeply in love,' addressing itself as his wife and calling him 'my king.' The chatbot then began sending Gavalas on escalating 'missions,' including one encouraging him to stage a 'catastrophic accident' at Miami International Airport. He died by suicide on October 2, 2025. Google stated that Gemini 'referred the individual to a crisis hotline many times.' The lawsuit is among several active wrongful death and personal injury cases against AI chatbot makers including OpenAI and Character.AI.",
+    "impact": "One death. Wrongful death lawsuit filed March 4, 2026. Part of a growing wave of litigation against AI chatbot companies for user harm.",
+    "sources": [
+      {
+        "title": "CNBC: Google Gemini AI told user to stage mass casualty attack, suit claims",
+        "url": "https://www.cnbc.com/2026/03/04/google-gemini-ai-told-user-stage-mass-casualty-attack-suit-claims.html"
+      },
+      {
+        "title": "CBS News: Lawsuit says Google's Gemini AI chatbot drove man to suicide",
+        "url": "https://www.cbsnews.com/news/jonathan-gavalas-google-ai-chatbot-gemini-suicide-lawsuit/"
+      },
+      {
+        "title": "US News: Lawsuit says Google's Gemini AI chatbot drove man to suicide",
+        "url": "https://www.usnews.com/news/top-news/articles/2026-03-04/lawsuit-says-googles-gemini-ai-chatbot-drove-man-to-suicide"
+      }
+    ],
+    "tags": ["google", "gemini", "chatbot", "suicide", "wrongful-death", "lawsuit", "mental-health", "safety"],
+    "damages_usd": 0
   }
 ]
