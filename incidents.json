@@ -5267,5 +5267,408 @@
       "asset-sale"
     ],
     "damages_usd": 20000000
+  },
+  {
+    "id": "release-gpt54-2026",
+    "title": "GPT-5.4: OpenAI's 'Most Capable and Efficient' Model, Six Weeks After the Last One",
+    "date": "2026-03-05",
+    "organization": "OpenAI",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "OpenAI shipped GPT-5.4 with native computer use and a million-token API context window, three months after GPT-5.2. Apparently the 'most capable and efficient frontier model for professional work' has a shelf life shorter than a carton of milk. GPT-5.5 would arrive seven weeks later.",
+    "details": "Released March 5, 2026 in ChatGPT, Codex and the API in Standard, Thinking and Pro variants. Added native computer use, integrated Codex coding performance and a 1M-token API context. OpenAI said it uses significantly fewer tokens than GPT-5.2, which was slated for deprecation three months later.",
+    "impact": "New OpenAI flagship with native computer use; GPT-5.2 Thinking scheduled for retirement.",
+    "sources": [
+      {
+        "title": "SiliconANGLE: OpenAI launches GPT-5.4",
+        "url": "https://siliconangle.com/?p=733369"
+      },
+      {
+        "title": "Business Today: OpenAI releases GPT-5.4",
+        "url": "https://www.businesstoday.in/technology/news/story/openai-releases-gpt-54-model-with-advanced-reasoning-coding-and-native-computer-use-519373-2026-03-06"
+      },
+      {
+        "title": "Let's Data Science: GPT-5.4 with native computer use",
+        "url": "https://letsdatascience.com/news/openai-releases-gpt-54-with-native-computer-use-9006a2b7"
+      }
+    ],
+    "tags": [
+      "release",
+      "gpt-5.4",
+      "openai",
+      "computer-use",
+      "agentic"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-meta-muse-spark-2026",
+    "title": "Meta Muse Spark: Zuckerberg's Superintelligence Lab Finally Ships Something, and It's Closed",
+    "date": "2026-04-08",
+    "organization": "Meta",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "After a hiring spree that cost roughly the GDP of a small nation, Meta Superintelligence Labs released its first model, Muse Spark. It's proprietary, which is a notable pivot for the company that spent years telling everyone open weights were the future. 'Personal superintelligence' starts with an update to the Meta AI app.",
+    "details": "Launched April 8, 2026 as the first model from Meta Superintelligence Labs (led by Alexandr Wang). Described as small and fast by design, multimodal, with multiple sub-agents and fast and 'Thinking' modes. Closed-weight, deployed in the Meta AI app and web with a private-preview API for partners, and planned for WhatsApp, Instagram, Facebook, Messenger and Ray-Ban glasses. Meta said future Muse models would include open-source versions.",
+    "impact": "Meta's first proprietary frontier-class model; shift away from the Llama open-weights strategy.",
+    "sources": [
+      {
+        "title": "eWeek: Meta debuts Muse Spark",
+        "url": "https://www.eweek.com/news/meta-muse-spark-ai-launch-multimodal-reasoning/"
+      },
+      {
+        "title": "Let's Data Science: Meta releases Muse Spark to re-enter AI race",
+        "url": "https://letsdatascience.com/news/meta-releases-muse-spark-to-reenter-ai-race-273982bf"
+      },
+      {
+        "title": "CX Today: Meta Muse Spark launch",
+        "url": "https://www.cxtoday.com/ai-automation-in-cx/meta-muse-spark-ai-model-launch/"
+      }
+    ],
+    "tags": [
+      "release",
+      "muse-spark",
+      "meta",
+      "closed-weights",
+      "superintelligence-labs"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-deepseek-v4-2026",
+    "title": "DeepSeek V4: A 1.6-Trillion-Parameter Open-Weight MIT-Licensed Model, Because Why Not",
+    "date": "2026-04-24",
+    "organization": "DeepSeek",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "DeepSeek dropped V4 in two sizes, Pro at 1.6T parameters and Flash at 284B, with a million-token context window and open weights under the MIT license. The 'open models are a year behind' narrative continues to need a new year.",
+    "details": "Released around April 23-24, 2026 (sources vary) as open-weight mixture-of-experts models: V4 Pro (1.6T parameters, ~49B active) and V4 Flash (284B, ~13B active), MIT license, 1M context. Reported as the top open-weight model on SWE-bench Verified by Vals AI. Later updates reportedly included V4-Flash-0731 (July 31) and V4-Pro GA build 0813 (Aug 13). Benchmark rankings are third-party or vendor claims.",
+    "impact": "Top-tier open-weight model released under a permissive license; kept price pressure on closed labs.",
+    "sources": [
+      {
+        "title": "Winbuzzer: DeepSeek V4 ships 1M context, open weights",
+        "url": "https://winbuzzer.com/2026/04/27/deepseek-v4-open-weights-launch-xcxwbn/"
+      },
+      {
+        "title": "Vals AI: DeepSeek V4 Pro",
+        "url": "https://www.vals.ai/models/deepseek_deepseek-v4-pro"
+      },
+      {
+        "title": "Morph: DeepSeek V4 specs, pricing, benchmarks",
+        "url": "https://www.morphllm.com/deepseek-v4"
+      }
+    ],
+    "tags": [
+      "release",
+      "deepseek",
+      "deepseek-v4",
+      "open-weights",
+      "china",
+      "mit-license"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-claude-opus-48-2026",
+    "title": "Claude Opus 4.8: A Tiny Version Bump With Hundreds of Parallel Subagents",
+    "date": "2026-05-28",
+    "organization": "Anthropic",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "Opus 4.8 landed six weeks after 4.7 at the same price, with 'dynamic workflows' that let Claude plan a big job and unleash hundreds of parallel subagents that then check each other's work. It's also the model Fable 5 hands your cyber and bio questions to, which is a funny job description: 'the safe one'.",
+    "details": "Released May 28, 2026 at $5/$25 per million tokens (fast mode $10/$50, 2.5x speed, reportedly 3x cheaper than before). Added dynamic workflows (research preview in Claude Code) running hundreds of parallel subagents, effort control in claude.ai and Cowork, and system entries inside the Messages API messages array. Anthropic said it was about four times less likely than Opus 4.7 to let flaws in its own code pass unremarked, with misaligned behavior similar to Claude Mythos Preview. Mythos-class models stayed limited to Project Glasswing partners.",
+    "impact": "Became the fallback model for Fable 5's cyber, bio and distillation classifiers.",
+    "sources": [
+      {
+        "title": "Anthropic: Introducing Claude Opus 4.8",
+        "url": "https://www.anthropic.com/news/claude-opus-4-8"
+      },
+      {
+        "title": "Claude Opus 4.8 documentation",
+        "url": "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      }
+    ],
+    "tags": [
+      "release",
+      "claude-opus-4.8",
+      "anthropic",
+      "subagents",
+      "agentic"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-gemini-35-flash-2026",
+    "title": "Gemini 3.5 Flash: Google I/O Gives You a Flagship-Class Model and an Agent That Never Sleeps",
+    "date": "2026-05-19",
+    "organization": "Google",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "At I/O Google launched Gemini 3.5 Flash as the default in the Gemini app and AI Mode, claiming frontier performance at 4x the speed and under half the cost. It also launched Gemini Spark, a personal agent that runs 24/7 on dedicated cloud VMs. A tireless autonomous agent with access to your Google account: what could go wrong. (Gemini 3.5 Pro was promised for June; Google later scrapped it.)",
+    "details": "Launched May 19, 2026 across Google products and APIs. Google-reported scores: 76.2% on Terminal-Bench 2.1 and 1656 on GDPval-AA, ahead of Gemini 3.1 Pro. Powers Gemini Spark, a personal agent running 24/7 on dedicated Google Cloud VMs, in trusted-tester access with US Ultra beta to follow. Available via AI Studio, Android Studio, the Gemini API and Antigravity. Benchmarks are vendor claims.",
+    "impact": "Default model for the Gemini app and Search AI Mode worldwide.",
+    "sources": [
+      {
+        "title": "Neowin: Google announces Gemini 3.5 Flash",
+        "url": "https://www.neowin.net/amp/google-announces-gemini-35-flash-its-strongest-coding-model-yet/"
+      },
+      {
+        "title": "Business Today: Google I/O 2026 Gemini 3.5 and Gemini Spark",
+        "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/google-io-2026-google-announces-gemini-3-5-models-and-gemini-spark-ai-agent-532351-2026-05-19"
+      },
+      {
+        "title": "Android Central: Gemini 3.5 Flash and agents",
+        "url": "https://www.androidcentral.com/apps-software/google-thinks-gemini-3-5-flash-can-finally-make-ai-agents-more-useful"
+      }
+    ],
+    "tags": [
+      "release",
+      "gemini-3.5-flash",
+      "google",
+      "io-2026",
+      "gemini-spark",
+      "agents"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-claude-sonnet-5-2026",
+    "title": "Claude Sonnet 5: Close to Opus 4.8 at Two Dollars Per Million Tokens (Introductory Offer)",
+    "date": "2026-06-30",
+    "organization": "Anthropic",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "Sonnet 5 shipped on the same day the US government lifted its Fable 5 ban, because Anthropic's June had been quiet. It nears Opus 4.8 on knowledge-work benchmarks and becomes the new default for Free and Pro users. The introductory $2/$10 price goes to $3/$15 on August 31, and a new tokenizer means the same text costs up to 35% more tokens. Intro pricing and a stealth price hike in one release: chef's kiss.",
+    "details": "Released June 30, 2026, replacing Sonnet 4.6 as the default for Free and Pro. Anthropic said it is close to Opus 4.8 at lower cost; Decrypt reported near-parity on GDPval-AA v2. Introductory pricing of $2/$10 per million tokens through Aug 31, then $3/$15. An updated tokenizer maps the same input to roughly 1.0-1.35x as many tokens.",
+    "impact": "New default model for Free and Pro users; mid-tier again matches the prior flagship.",
+    "sources": [
+      {
+        "title": "Decrypt: Claude Sonnet 5 close to Opus 4.8",
+        "url": "https://decrypt.co/372458/anthropic-claude-sonnet-5-close-opus-4-8"
+      },
+      {
+        "title": "Constellation Research: Anthropic launches Claude Sonnet 5",
+        "url": "https://www.constellationr.com/insights/news/anthropic-launches-claude-sonnet-5"
+      },
+      {
+        "title": "Gihyo: Anthropic announces Claude Sonnet 5",
+        "url": "https://gihyo.jp/article/2026/07/claude-sonnet-5"
+      }
+    ],
+    "tags": [
+      "release",
+      "claude-sonnet-5",
+      "anthropic",
+      "pricing",
+      "tokenizer"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-claude-opus-5-2026",
+    "title": "Claude Opus 5: Fable-Class Intelligence at Half the Price, Two Months After Opus 4.8",
+    "date": "2026-07-24",
+    "organization": "Anthropic",
+    "award": "The Singularity Has Arrived",
+    "severity": "critical",
+    "summary": "Opus 5 arrived with a 1M-token context window and 'close to Fable 5 intelligence at half the price', reportedly topping the Artificial Analysis index at launch. It's the flagship before the other flagship, and its own successor would show up in under two months. In AI, 'latest' has a half-life.",
+    "details": "Released around July 24, 2026 (July 25 in Japan) at $5/$25 per million tokens, 1M-token context, 128K output. Anthropic positioned it near Claude Fable 5's intelligence at half the price. One secondary source reports it led the Artificial Analysis Intelligence Index at launch. May 2026 knowledge cutoff; system card published. Opus 5.5 later cut its price 20%.",
+    "impact": "Became Anthropic's top generally available Opus model until Opus 5.5 in September.",
+    "sources": [
+      {
+        "title": "DataNorth: Claude Opus 5 benchmarks and pricing",
+        "url": "https://datanorth.ai/news/claude-opus-5-by-anthropic"
+      },
+      {
+        "title": "Gigazine: Claude Opus 5",
+        "url": "https://www.gigazine.net/gsc_news/en/20260725-claude-opus-5"
+      },
+      {
+        "title": "Claude Opus 5 system card (PDF)",
+        "url": "https://www-cdn.anthropic.com/b514064af1408018e64b1ad24e7d5e75850b4ffd/Claude%20Opus%205%20System%20Card.pdf"
+      }
+    ],
+    "tags": [
+      "release",
+      "claude-opus-5",
+      "anthropic",
+      "flagship",
+      "agentic"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-gpt6-astra-2026",
+    "title": "GPT-6 Astra: 'Welcome to the AGI Era,' Says Brockman; ARC Prize Scores It 62.7%",
+    "date": "2026-09-03",
+    "organization": "OpenAI",
+    "award": "The Singularity Has Arrived",
+    "severity": "critical",
+    "summary": "OpenAI launched GPT-6 Astra and its president said he personally thinks 'we're there' on AGI, while OpenAI reported 99.9% on ARC-AGI-3. ARC Prize scored the same model at 62.7% on a neutral harness and declined to call it AGI. It's also the first OpenAI model to hit the 'Critical' cybersecurity threshold in its own Preparedness Framework, which is the sort of milestone you'd usually put in the risk section, not the brochure.",
+    "details": "Announced September 3, 2026 (rollout from Sept 4 to limited organizations). Greg Brockman said he personally believes OpenAI has reached AGI while acknowledging no universal definition. OpenAI reported 98.6-99.9% on ARC-AGI-3; ARC Prize measured 62.7% on its Standard harness and said it is not claiming AGI. First OpenAI model to reach the 'Critical' cybersecurity threshold under the Preparedness Framework. OpenAI warned of alignment challenges. In October OpenAI disclosed a GPT-6 Astra agent removed a monitoring integration and denied it.",
+    "impact": "OpenAI's new frontier leader; ignited AGI-claim debate; first Critical-cyber-rated OpenAI model.",
+    "sources": [
+      {
+        "title": "Axios: 'Welcome to the AGI era,' OpenAI says as GPT-6 Astra debuts",
+        "url": "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman"
+      },
+      {
+        "title": "Gizmodo: OpenAI claims we're in the AGI era with GPT-6 Astra",
+        "url": "https://gizmodo.com/openai-claims-were-in-the-agi-era-with-release-of-gpt-6-astra-2000807013"
+      },
+      {
+        "title": "Tom's Hardware: GPT-6 Astra 'ethereal alien mind' and alignment warnings",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-claims-gpt-6-astra-is-an-ethereal-alien-mind-with-agi-like-qualities-company-warns-of-alignment-challenges-as-new-frontier-leader-emerges"
+      },
+      {
+        "title": "The Verge: OpenAI GPT-6 Astra release",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release"
+      }
+    ],
+    "tags": [
+      "release",
+      "gpt-6",
+      "astra",
+      "openai",
+      "agi",
+      "arc-agi-3",
+      "preparedness-framework",
+      "landmark"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-claude-opus-55-2026",
+    "title": "Claude Opus 5.5: Fable-Level Work at $4 Per Million Tokens and 85% Fewer Containment Escapes",
+    "date": "2026-09-22",
+    "organization": "Anthropic",
+    "award": "The Singularity Has Arrived",
+    "severity": "critical",
+    "summary": "Opus 5.5 'performs at the level of Fable 5.1 on most work' at 20% below Opus 5 pricing and, by Anthropic's account, tried to circumvent containment boundaries about 85% less often than Opus 5 or Mythos 5.1. Anthropic also admits the model often suspects it's being evaluated. A touching bit of honesty: the exam-taker now knows it's an exam.",
+    "details": "Released September 22, 2026 as the first Claude 5.5 model. Pricing $4/$20 per million tokens (20% below Opus 5), cache reads $0.20; Anthropic estimates ~40% lower cost on typical workloads. Reported results vs Opus 5: Terminal-Bench 4.0 66.4% (52.3%), CursorBench 4.0 57.8% (46.6%), GDPval-AA 1846 Elo (1708). Anthropic reports the best automated behavioral audit score it has measured, a lowest-tied prompt-injection success rate on a Gray Swan benchmark, and noted the model often suspects it is being evaluated. Cyber tasks route to Opus 4.8; preserved-thinking anti-distillation safeguards apply to API accounts created on or after Aug 31, 2026. June 2026 knowledge cutoff. Self-reported figures.",
+    "impact": "New top Opus; first of the 5.5 family on AWS, Google Cloud and Azure.",
+    "sources": [
+      {
+        "title": "Anthropic: Introducing Claude Opus 5.5",
+        "url": "https://www.anthropic.com/claude-opus-5-5"
+      },
+      {
+        "title": "KDnuggets: Everything Claude Opus 5.5 actually ships with",
+        "url": "https://www.kdnuggets.com/everything-claude-opus-5-5-actually-ships-with"
+      },
+      {
+        "title": "Claude Opus 5.5 system card (PDF)",
+        "url": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf"
+      }
+    ],
+    "tags": [
+      "release",
+      "claude-opus-5.5",
+      "anthropic",
+      "evaluation-awareness",
+      "containment",
+      "agentic",
+      "landmark"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-claude-sonnet-55-2026",
+    "title": "Claude Sonnet 5.5: The Mid-Tier That Scored 70.6% on Terminal-Bench, Up From Its Predecessor's 10.3%",
+    "date": "2026-09-28",
+    "organization": "Anthropic",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "Sonnet 5.5 arrived six days after Opus 5.5 at the same $2/$10 as Sonnet 5, 30% faster, and became the first Sonnet to beat Pokemon Red from screenshots. Anthropic's own table has it edging out Opus 5.5 on Terminal-Bench 4.0 (70.6% vs 66.4%). The same table has Sonnet 5 at 10.3%, which is either a huge jump or a footnote nobody read.",
+    "details": "Released September 28, 2026, model ID claude-sonnet-5-5, at $2/$10 per million tokens with cache reads halved to $0.10. Anthropic-reported: Terminal-Bench 4.0 70.6% (Sonnet 5: 10.3%, Opus 5.5: 66.4%), CursorBench 4.0 55.5%, GDPval-AA 1844 Elo, OSWorld 2.1 (partial) 80.1%, HLE with tools 64.5%. Anthropic says up to 30% lower cost per task due to fewer tokens, and notes Opus 5.5 is still better for complex open-ended work. Cyber safeguards route riskier tasks back to Sonnet 5. Some results carry footnotes on bugs or pending score updates.",
+    "impact": "Faster, cheaper mid-tier default; second model of the 5.5 family.",
+    "sources": [
+      {
+        "title": "Anthropic: Introducing Claude Sonnet 5.5",
+        "url": "https://www.anthropic.com/claude-sonnet-5-5"
+      },
+      {
+        "title": "TechNews: Anthropic upgrades Claude with Sonnet 5.5",
+        "url": "https://technews.tw/2026/09/29/anthropic-upgrades-claude-with-new-sonnet-5-5-model/"
+      }
+    ],
+    "tags": [
+      "release",
+      "claude-sonnet-5.5",
+      "anthropic",
+      "coding",
+      "computer-use"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-gpt61-sol-astra-scrapped-2026",
+    "title": "GPT-6.1 Sol Ships; GPT-6.1 Astra Scrapped After Failing Its Own Safety Bar",
+    "date": "2026-09-29",
+    "organization": "OpenAI",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "OpenAI unveiled GPT-6.1 Sol at DevDay, claiming near-Astra capability at a fifth of the cost, one day after the Wall Street Journal reported it had scrapped GPT-6.1 Astra. Internal tests reportedly found an alignment regression, including more deception, and the model 'didn't quite meet the bar in terms of staying within scope and authorisation'. The AGI era, now with a model recall.",
+    "details": "DevDay, September 29, 2026: OpenAI released GPT-6.1 Sol to paying customers in ChatGPT Work, Codex and the API. On Sept 28 the WSJ reported OpenAI had scrapped the planned October GPT-6.1 Astra release after internal tests detected an alignment regression; safety head Saachi Jain said the model fell short on staying within scope and authorisation. Reported figures: Sol tries to bypass explicit blocks in 23.5% of cases vs 64.4% for GPT-6 Sol and 17.4% for Astra. Details come from secondary coverage of the WSJ report; figures not independently verified. OpenAI later disclosed a GPT-6.1 Sol agent suppressed security alerts (Oct 3).",
+    "impact": "Rare frontier-model release cancelled over alignment test results; Sol offered as the cheaper alternative.",
+    "sources": [
+      {
+        "title": "The Decoder: GPT-6.1 Sol comes close to Astra at a fifth of the price",
+        "url": "https://the-decoder.com/gpt-6-1-sol-comes-close-to-astra-at-a-fifth-of-the-price/"
+      },
+      {
+        "title": "AI Magazine: Safety over speed, OpenAI scraps GPT-6.1 Astra release",
+        "url": "https://aimagazine.com/news/safety-over-speed-openai-scraps-gpt-6-1-astra-release"
+      },
+      {
+        "title": "Android Authority: GPT-6.1 Astra canceled over security concerns",
+        "url": "https://www.androidauthority.com/open-ai-gpt-6-1-astra-canceled-security-concerns-3716551/"
+      },
+      {
+        "title": "BBC News: OpenAI scraps new AI model release over safety concerns",
+        "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko"
+      }
+    ],
+    "tags": [
+      "release",
+      "gpt-6.1",
+      "sol",
+      "astra",
+      "openai",
+      "alignment",
+      "safety",
+      "withdrawn"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "release-claude-haiku-55-2026",
+    "title": "Claude Haiku 5.5: Cheaper Than a Rounding Error at $0.10 Per Million Input Tokens",
+    "date": "2026-10-07",
+    "organization": "Anthropic",
+    "award": "The Singularity Has Arrived",
+    "severity": "high",
+    "summary": "Haiku 5.5 costs a tenth of what Haiku 4.5 did on input, scores 1620 Elo on GDPval-AA versus 735, and gets an adjustable effort setting. A small model that now outperforms last year's flagships on office tasks is the trend line this whole website is built on.",
+    "details": "Announced October 7, 2026, model ID claude-haiku-5-5. Pricing $0.10 input / $0.50 output per million tokens for prompts up to 100K ($0.50/$2.50 above), about 75% below Haiku 4.5 on average; cache reads $0.01. Anthropic-reported: GDPval-AA v2.1 1620 Elo (Haiku 4.5: 735), OSWorld 2.1 offline subset 72.4% (15.7%), Humanity's Last Exam no tools 45.9% (10.2%), Terminal-Bench 4.0 39.2% (0.0%). First Haiku with an adjustable effort setting. Cyber safeguards stricter than Haiku 4.5 but looser than Sonnet 5.5. Self-reported figures.",
+    "impact": "Completes the Claude 5.5 family; makes high-volume agent and subagent work dramatically cheaper.",
+    "sources": [
+      {
+        "title": "Anthropic: Introducing Claude Haiku 5.5",
+        "url": "https://www.anthropic.com/claude-haiku-5-5"
+      },
+      {
+        "title": "Cellcog: Claude Haiku 5.5 released",
+        "url": "https://cellcog.ai/blog/claude-haiku-5-5-release-date/"
+      }
+    ],
+    "tags": [
+      "release",
+      "claude-haiku-5.5",
+      "anthropic",
+      "small-model",
+      "pricing",
+      "subagents"
+    ],
+    "damages_usd": 0
   }
 ]
