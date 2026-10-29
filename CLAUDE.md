@@ -34,6 +34,8 @@ Current award categories:
 - `The Insider Threats We Made Along the Way`
 - `Achievement Unlocked: Regulatory Action`
 - `Skynet Is Self-Aware`
+- `The Singularity Has Arrived` (model releases; rendered specially via `RELEASE_AWARD`)
+- `Economy Goes Brrrrr` (circular AI deals, mega-rounds, IPOs, AI debt/financing; set `damages_usd` to 0 so the stats bar isn't inflated)
 
 ## Adding Incidents
 

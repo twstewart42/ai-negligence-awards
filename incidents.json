@@ -5670,5 +5670,889 @@
       "subagents"
     ],
     "damages_usd": 0
+  },
+  {
+    "id": "nvidia-openai-100b-loi-2025",
+    "title": "Nvidia Will Invest Up to $100B in OpenAI, Which Will Buy Nvidia Chips With It",
+    "date": "2025-09-22",
+    "organization": "Nvidia / OpenAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Nvidia announced it would invest up to $100 billion in OpenAI, which would use the money to deploy 10 gigawatts of Nvidia systems. Jensen Huang reportedly noted OpenAI 'doesn't have the money right now'. It's a vendor financing its customer's purchases of the vendor's product, which accountants have a word for, and analysts picked a different one: 'circular'.",
+    "details": "Announced in September 2025 as a letter of intent, not a binding contract: up to $100B of Nvidia investment tied to data-center buildout, with an initial $10B tranche linked to the first gigawatt coming online, in exchange for OpenAI deploying 10 GW of Nvidia systems. Morningstar's Brian Colello called the partnership 'circular'. NBC summarized the broader loop: Nvidia invests in OpenAI, which buys cloud from Oracle, which buys chips from Nvidia, which holds a stake in CoreWeave, which provides infrastructure to OpenAI.",
+    "impact": "Launched the 'circular AI financing' debate; the LOI was later replaced by a $30B equity investment.",
+    "sources": [
+      {
+        "title": "NBC News: OpenAI, Nvidia and AMD deals risks",
+        "url": "https://www.nbcnews.com/business/economy/openai-nvidia-amd-deals-risks-rcna234806"
+      },
+      {
+        "title": "The Register: AI's trillion dollar deal wheel bubbling around Nvidia, OpenAI",
+        "url": "https://www.theregister.com/2025/11/04/the_circular_economy_of_ai/"
+      },
+      {
+        "title": "Harvard PON: What are circular deals?",
+        "url": "https://www.pon.harvard.edu/daily/dealmaking-daily/what-are-circular-deals/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "nvidia",
+      "openai",
+      "circular-financing",
+      "letter-of-intent",
+      "gigawatts"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "amd-openai-warrants-2025",
+    "title": "AMD Hands OpenAI Warrants for Up to 10% of AMD for the Privilege of Selling It Chips",
+    "date": "2025-10-06",
+    "organization": "AMD / OpenAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "OpenAI committed to deploying 6 gigawatts of AMD GPUs, and in return received warrants to buy up to 10% of AMD at a penny a share, vesting as milestones are hit. AMD is effectively paying its customer in equity to be its customer. Accountants have a more polite term for this: 'creative'.",
+    "details": "Announced in early October 2025: OpenAI to deploy 6 GW of AMD Instinct GPUs; AMD issued OpenAI warrants for up to roughly 160 million shares (about 10% of AMD) at a nominal price, tied to deployment and stock-price milestones. Commentators noted AMD was effectively paying OpenAI to become a customer. A February 2026 AMD deal with Meta, reportedly valued above $100B, also included warrants for about 10% of AMD.",
+    "impact": "Template for equity-for-orders chip deals; AMD shareholders signed up for dilution as a sales strategy.",
+    "sources": [
+      {
+        "title": "NBC News: OpenAI, Nvidia and AMD deals risks",
+        "url": "https://www.nbcnews.com/business/economy/openai-nvidia-amd-deals-risks-rcna234806"
+      },
+      {
+        "title": "Built In: How circular financing is fueling the AI boom",
+        "url": "https://builtin.com/articles/ai-circular-financing"
+      },
+      {
+        "title": "Penchan: What is AI circular investing?",
+        "url": "https://penchan.co/en/market/ai/industry/circular-financing/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "amd",
+      "openai",
+      "warrants",
+      "circular-financing",
+      "meta"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "oracle-openai-300b-stargate-2025",
+    "title": "Oracle Reportedly Signs $300B Compute Deal With OpenAI, a Company That Doesn't Have $300B",
+    "date": "2025-09-10",
+    "organization": "Oracle / OpenAI / SoftBank",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Oracle's stock rocketed on a reported ~$300 billion, five-year compute contract with OpenAI under the Stargate banner, to be funded by Oracle borrowing to buy Nvidia chips for a customer that is funded by Nvidia. The money goes in a circle and the stock goes up in a line. Oracle's credit default swaps later went the other way.",
+    "details": "Reported in September 2025 by the media and not officially confirmed in full by the companies: roughly $300B of compute capacity for OpenAI over about five years starting in 2027, as part of the Stargate project with SoftBank. Oracle financed the build with heavy borrowing; by October 2026 its five-year CDS spread had widened from 141 bp in January to 308 bp. Dollar figures come from reporting and secondary analysis.",
+    "impact": "Turned Oracle into the market's proxy for OpenAI's ability to pay; the stock and credit later swung on every Stargate delay.",
+    "sources": [
+      {
+        "title": "NBC News: OpenAI, Nvidia and AMD deals risks",
+        "url": "https://www.nbcnews.com/business/economy/openai-nvidia-amd-deals-risks-rcna234806"
+      },
+      {
+        "title": "Penchan: What is AI circular investing?",
+        "url": "https://penchan.co/en/market/ai/industry/circular-financing/"
+      },
+      {
+        "title": "Motion and Madness: AI debt in October 2026",
+        "url": "https://www.motionandmadness.com/p/ai-debt-in-october-2026-how-the-buildout"
+      }
+    ],
+    "tags": [
+      "funding",
+      "oracle",
+      "openai",
+      "stargate",
+      "softbank",
+      "compute-contract",
+      "debt"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "microsoft-nvidia-anthropic-15b-2025",
+    "title": "Microsoft and Nvidia Invest Up to $15B in Anthropic, Anthropic Buys $30B of Azure",
+    "date": "2025-11-18",
+    "organization": "Microsoft / Nvidia / Anthropic",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "Not to be outdone, Anthropic got up to $15 billion from Microsoft and Nvidia while committing to buy $30 billion of Azure compute and up to a gigawatt of Nvidia hardware. Investor puts in money; startup gives the money back to investor for compute; everyone books it as growth. The only thing the circle has in common with a flywheel is that it's also round.",
+    "details": "Announced in November 2025: Nvidia to invest up to $10B and Microsoft up to $5B in Anthropic; Anthropic committed to roughly $30B of Azure compute and to contracting up to 1 GW of Nvidia systems (Grace Blackwell and Vera Rubin), with Claude models available in Azure AI Foundry. Anthropic reportedly kept AWS as its main training partner.",
+    "impact": "Brought Anthropic into the same investor-supplier loops as OpenAI.",
+    "sources": [
+      {
+        "title": "Outlook Business: Anthropic to draw $15B from Microsoft, Nvidia",
+        "url": "https://www.outlookbusiness.com/artificial-intelligence/anthropic-to-draw-15-bn-from-microsoft-nvidia-after-committing-30-bn-to-azure-1gw-of-nvidia-compute"
+      },
+      {
+        "title": "YourStory: Microsoft, Nvidia and Anthropic multibillion-dollar commitments",
+        "url": "https://yourstory.com/ai-story/microsoft-nvidia-anthropic-multibillion-dollar-commitments"
+      }
+    ],
+    "tags": [
+      "funding",
+      "anthropic",
+      "microsoft",
+      "nvidia",
+      "azure",
+      "circular-financing"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "spacex-xai-merger-2026",
+    "title": "SpaceX Absorbs xAI at a Combined $1.25 Trillion, Ahead of an IPO",
+    "date": "2026-02-02",
+    "organization": "SpaceX / xAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "Elon Musk merged his rocket company with his AI company in an all-stock deal, valuing SpaceX at $1T and xAI at $250B, thereby pulling a money-burning chatbot lab under the umbrella of a company with actual revenue. Both were privately held and the merged entity was 'ripe for IPO'. A cash-burning AI lab is a lot easier to value when it's a rounding error in a rocket company.",
+    "details": "In early February 2026 SpaceX acquired xAI in an all-stock deal, valuing SpaceX at about $1 trillion and xAI at about $250B (combined ~$1.25T), per reporting. Earlier marks were ~$800B (SpaceX secondary) and $230B (xAI Series E). The combined company was reported to be burning roughly $1B a month at the time of IPO filing.",
+    "impact": "Created the largest private company on earth, setting up the largest IPO ever.",
+    "sources": [
+      {
+        "title": "Fortune: Elon Musk SpaceX xAI IPO trillion",
+        "url": "https://fortune.com/2026/02/02/elon-musk-spacex-xai-ipo-trillion"
+      },
+      {
+        "title": "Motley Fool: SpaceX absorbed xAI at a combined $1.25 trillion valuation",
+        "url": "https://www.fool.com/investing/2026/03/31/spacex-absorbed-xai-at-a-combined-125-trillion-val/"
+      },
+      {
+        "title": "InvestmentNews: Musk merger creates $1.25T privately held company",
+        "url": "https://www.investmentnews.com/equities/musk-merger-creates-125t-privately-held-company-ripe-for-ipo-but-what-about-tesla/265106"
+      }
+    ],
+    "tags": [
+      "funding",
+      "spacex",
+      "xai",
+      "merger",
+      "valuation",
+      "musk"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "nvidia-openai-100b-to-30b-2026",
+    "title": "Nvidia's '$100 Billion' OpenAI Deal Becomes a $30 Billion Equity Check",
+    "date": "2026-02-19",
+    "organization": "Nvidia / OpenAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "The $100 billion letter of intent that launched a thousand circular-finance blog posts was quietly 'replaced' by a $30 billion equity investment, reportedly after Nvidia execs had doubts and the WSJ said the arrangement was 'on ice'. A 70% discount on a headline that moved the market by hundreds of billions. Letters of intent: not contracts.",
+    "details": "On Feb 19, 2026 the FT reported Nvidia was close to finalizing a $30B equity investment in OpenAI replacing the multiyear $100B infrastructure commitment; CNBC confirmed the discussions and a source said the $30B was not tied to deployment milestones. In January the WSJ had reported the original arrangement was 'on ice' amid internal Nvidia doubts. The $30B was part of a round that grew to $110-122B. Neither company had formally commented on the change at the time of the reports.",
+    "impact": "Showed how soft headline AI deal numbers can be; deal value cut roughly 70%.",
+    "sources": [
+      {
+        "title": "Business Standard: Nvidia $30bn OpenAI investment after shelving $100bn deal",
+        "url": "https://www.business-standard.com/technology/tech-news/nvidia-30bn-openai-investment-after-shelving-100bn-deal-126022000503_1.html"
+      },
+      {
+        "title": "Outlook Business: Nvidia to invest $30bn in OpenAI, $100bn plan scrapped",
+        "url": "https://www.outlookbusiness.com/corporate/nvidia-to-invest-30bn-in-openai-previous-100bn-partnership-plan-scrapped"
+      },
+      {
+        "title": "OODA Loop: Nvidia and OpenAI abandon unfinished $100bn deal",
+        "url": "https://oodaloop.com/briefs/technology/nvidia-and-openai-abandon-unfinished-100bn-deal-in-favour-of-30bn-investment/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "nvidia",
+      "openai",
+      "letter-of-intent",
+      "equity",
+      "circular-financing"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "openai-122b-round-852b-2026",
+    "title": "OpenAI Closes $122 Billion at an $852 Billion Valuation; Amazon, Nvidia and SoftBank Write the Checks",
+    "date": "2026-03-31",
+    "organization": "OpenAI / Amazon / Nvidia / SoftBank",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "OpenAI closed the largest private funding round in history: $122 billion at an $852 billion post-money valuation. Amazon up to $50B (much of it conditional), Nvidia $30B, SoftBank $30B. Two of the top three investors sell OpenAI cloud capacity and chips respectively. It's an investor round in the same sense that a gift card is an income source.",
+    "details": "Announced Feb 27, 2026 as $110B in commitments and closed March 31 at $122B committed capital and an $852B post-money valuation ($730B pre-money), per CNBC and Bloomberg. Amazon committed up to $50B, with $35B reportedly conditional on milestones or an IPO; Nvidia $30B; SoftBank $30B; others included a16z, D. E. Shaw, MGX, TPG and T. Rowe Price. Per-investor splits vary across sources. In September 2026 investors were reported discussing a new round at $1.2-1.4T, not confirmed closed.",
+    "impact": "Largest private round ever; deepened investor-supplier entanglement around OpenAI.",
+    "sources": [
+      {
+        "title": "CNBC: OpenAI closes funding round at an $852 billion valuation",
+        "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
+      },
+      {
+        "title": "Axios: OpenAI secures $110B funding round with Amazon, Nvidia, SoftBank",
+        "url": "https://www.axios.com/2026/02/27/openai-funding-nvidia-amazon"
+      },
+      {
+        "title": "CNBC: OpenAI announces $110 billion funding round",
+        "url": "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html"
+      },
+      {
+        "title": "Bloomberg: OpenAI valued at $852 billion",
+        "url": "https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round"
+      }
+    ],
+    "tags": [
+      "funding",
+      "openai",
+      "amazon",
+      "nvidia",
+      "softbank",
+      "mega-round",
+      "valuation"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "openai-misses-targets-wsj-2026",
+    "title": "WSJ: OpenAI Missed Revenue and User Targets While Holding ~$600B in Compute Commitments",
+    "date": "2026-04-27",
+    "organization": "OpenAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "The Journal reported OpenAI fell short of internal revenue and user goals while sitting on roughly $600 billion in compute commitments, and that the CFO worried it might not be able to pay for them. Altman and Friar called it 'ridiculous' and 'prime clickbait'. The IPO documents, when they come, are going to be a great read.",
+    "details": "Per a Wall Street Journal report relayed by Reuters on April 27, 2026, OpenAI missed targets for new users and revenue in recent months, and CFO Sarah Friar voiced concern about paying for future compute contracts if revenue didn't grow fast enough; compute obligations were put at about $600B. Altman and Friar disputed the framing, saying they were aligned on buying as much compute as possible. Separately, Greg Brockman testified in court that OpenAI expected to burn $50B on compute before end of 2026. Figures vary by outlet; $1.4T figures cited elsewhere were not verified.",
+    "impact": "Put OpenAI's ability to fund its supplier commitments under public scrutiny ahead of an IPO.",
+    "sources": [
+      {
+        "title": "DCD: OpenAI missed revenue and user targets, internal concern over data center commitments",
+        "url": "https://www.datacenterdynamics.com/en/news/openai-missed-revenue-and-user-targets-faces-internal-concern-over-meeting-data-center-spend-commitments-report/"
+      },
+      {
+        "title": "Implicator: OpenAI misses targets as $600B compute obligations face IPO scrutiny",
+        "url": "https://www.implicator.ai/openai-misses-targets-as-600-billion-compute-obligations-face-ipo-scrutiny/"
+      },
+      {
+        "title": "Yahoo Finance: OpenAI falls short of revenue and user targets, WSJ reports",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/openai-falls-short-revenue-user-031016813.html"
+      }
+    ],
+    "tags": [
+      "funding",
+      "openai",
+      "revenue",
+      "compute-commitments",
+      "wsj",
+      "ipo"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "cerebras-ipo-2026",
+    "title": "Cerebras Raises $5.55B in the Biggest US Tech IPO Since 2019, Then Drops Below Its IPO Price",
+    "date": "2026-05-13",
+    "organization": "Cerebras",
+    "award": "Economy Goes Brrrrr",
+    "severity": "medium",
+    "summary": "Cerebras, the AI chip company with a reported $10B OpenAI deal, priced at $185 and raised $5.55 billion, the largest US tech listing since 2019. By October it was trading below its IPO price after lockups expired and AI infrastructure sold off. The pop is temporary; the lockup expiry is forever.",
+    "details": "Cerebras priced 30 million Class A shares at $185 on May 13, 2026 on Nasdaq (CBRS), raising $5.55B. Its filing reportedly highlighted a $10B OpenAI deal and ~$510M revenue. The stock fell below the IPO price in October 2026 as lockups expired and the AI infrastructure selloff hit chip names. CNBC noted the deal boosted hype for SpaceX, OpenAI and Anthropic IPOs but crowded out smaller listings.",
+    "impact": "Early test of public-market appetite for AI hardware ahead of the SpaceX, OpenAI and Anthropic IPOs.",
+    "sources": [
+      {
+        "title": "Cerebras: Pricing of initial public offering",
+        "url": "https://www.cerebras.ai/press-release/cerebras-systems-announces-pricing-of-initial-public-offering"
+      },
+      {
+        "title": "CNBC: Cerebras blockbuster IPO boosts hype for SpaceX and OpenAI",
+        "url": "https://www.cnbc.com/2026/05/16/cerebras-blockbuster-ipo-boosts-hype-for-spacex-openai-anthropic.html"
+      },
+      {
+        "title": "Startup Fortune: Cerebras stock sank below its IPO price",
+        "url": "https://startupfortune.com/cerebras-stock-sank-below-its-ipo-price-as-the-ai-selloff-hit-chips/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "cerebras",
+      "ipo",
+      "chips",
+      "openai",
+      "lockup"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "anthropic-965b-series-h-2026",
+    "title": "Anthropic Raises $65B at a $965B Valuation, Overtaking OpenAI, With Chipmakers and Hyperscalers on the Cap Table",
+    "date": "2026-05-28",
+    "organization": "Anthropic",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Anthropic's Series H raised $65 billion at a $965 billion post-money valuation, topping OpenAI, up from $380 billion a few months earlier. Contributors included Amazon, Google, and memory makers Micron, Samsung and SK Hynix. Suppliers are now investing in the customer that buys their stuff. Annualized revenue: $47 billion. Valuation-to-revenue ratio: don't ask.",
+    "details": "Announced May 28, 2026: $65B Series H at $965B post-money, led by Altimeter, Dragoneer, Greenoaks and Sequoia (each reportedly $2B+), with co-leads including Capital Group, Coatue, D1, GIC, ICONIQ and XN. Included $15B of previously committed hyperscaler capital (including $5B from Amazon); Google invested under a plan to invest up to $40B over time; Micron, Samsung and SK Hynix invested undisclosed amounts. Prior round: $30B Series G at $380B. Anthropic reported $47B annualized revenue.",
+    "impact": "Anthropic became the most valuable private AI company; the round exceeded its $30B target.",
+    "sources": [
+      {
+        "title": "Bloomberg Law: Anthropic raises at $965 billion valuation, eclipsing OpenAI",
+        "url": "https://news.bloomberglaw.com/private-equity/anthropic-raises-at-965-billion-valuation-eclipsing-openai-1"
+      },
+      {
+        "title": "Built In: Anthropic raises $65B Series H",
+        "url": "https://builtin.com/articles/anthropic-raises-65b-series-h-965b-valuation-20260601"
+      },
+      {
+        "title": "eWeek: Anthropic becomes the world's most valuable AI startup",
+        "url": "https://www.eweek.com/de/news/anthropic-965b-valuation-claude-ai-startup/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "anthropic",
+      "series-h",
+      "mega-round",
+      "valuation",
+      "hyperscalers",
+      "memory-makers"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "openai-confidential-s1-2026",
+    "title": "OpenAI Files Confidentially to Go Public a Week After Anthropic, Weeks Before SpaceX",
+    "date": "2026-06-08",
+    "organization": "OpenAI / Anthropic",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "June 2026 became the month everyone filed. Anthropic filed confidentially June 1, OpenAI on June 8 (Goldman and Morgan Stanley, listing as soon as fall, reportedly aiming at up to $1T), and SpaceX was due any minute. Combined target: more money raised in a quarter than most countries' GDP.",
+    "details": "OpenAI said it had 'recently submitted a confidential S-1' on June 8, 2026 without giving timing or size; Reuters reported a valuation target as high as $1T; Goldman Sachs and Morgan Stanley were working on a listing potentially as soon as the fall, and Altman told staff to expect going public 'within the next year'. Later reports suggested OpenAI leaned toward a 2027 listing (not confirmed). Anthropic submitted its confidential filing June 1.",
+    "impact": "Set up the largest IPO wave in history, with the two leading labs both heading to public markets.",
+    "sources": [
+      {
+        "title": "ABC7: OpenAI confidentially files for IPO",
+        "url": "https://abc7news.com/post/openai-confidentially-files-ipo-signaling-major-public-debut-san-francisco-ai-company/19259042/"
+      },
+      {
+        "title": "DCD: OpenAI files for US IPO",
+        "url": "https://www.datacenterdynamics.com/en/news/openai-files-for-us-ipo-but-says-it-still-has-things-it-wants-to-do-while-private/"
+      },
+      {
+        "title": "Silicon UK: OpenAI files confidentially for IPO",
+        "url": "https://www.silicon.co.uk/ai-2/openai-ipo-filing-630185/amp"
+      }
+    ],
+    "tags": [
+      "funding",
+      "openai",
+      "anthropic",
+      "ipo",
+      "s-1",
+      "goldman-sachs"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "spacex-record-ipo-2026",
+    "title": "SpaceX Prices the Largest IPO Ever: $75 Billion at $135, Valued Above $2 Trillion on Day One",
+    "date": "2026-06-11",
+    "organization": "SpaceX / xAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "SpaceX raised $75 billion at $135 a share, the biggest IPO in history by roughly 3x, then popped 19% on day one to a market value north of $2 trillion. Inside the wrapper: xAI, burning roughly a billion dollars a month. One analyst initiated with a Sell and a $115 target, which is the sort of analyst who gets uninvited from parties.",
+    "details": "SpaceX sold ~555.6M shares at $135 on June 11, 2026 (Nasdaq: SPCX), raising ~$75B, about three times the prior largest US IPO per CNBC; the stock opened at $150 and closed day one at $160.95 (+19%), implying a value around $2.1T (pre-debut deal value $1.77T). SpaceX includes the AI business acquired from xAI. At least one analyst initiated at Sell with a $115 target. An unverified source claims total proceeds reached $85.7B with the greenshoe.",
+    "impact": "Largest IPO ever; first mega-listing of a company with a frontier AI lab inside it.",
+    "sources": [
+      {
+        "title": "TechCrunch: SpaceX officially prices shares at $135 in the largest IPO ever",
+        "url": "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/"
+      },
+      {
+        "title": "CNBC: SpaceX raises $75 billion in record-setting IPO",
+        "url": "https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html"
+      },
+      {
+        "title": "NPR: SpaceX IPO makes history as largest ever",
+        "url": "https://www.npr.org/2026/06/12/nx-s1-5855004/stock-ai-spacex-ipo-elon-musk"
+      },
+      {
+        "title": "CNBC: SPCX closes at $161",
+        "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+      }
+    ],
+    "tags": [
+      "funding",
+      "spacex",
+      "xai",
+      "ipo",
+      "record",
+      "musk",
+      "nasdaq"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "nvidia-105b-ohio-guarantee-2026",
+    "title": "Nvidia Guarantees Up to $105B of OpenAI's Ohio Data-Center Lease; Huang Says It's 'Not Circular'",
+    "date": "2026-08-17",
+    "organization": "Nvidia / OpenAI / SB Energy",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Nvidia agreed to backstop up to $105 billion of the lease on OpenAI's Ohio mega-campus, built by SoftBank's SB Energy, while also investing $1.5B in SB Energy. If OpenAI stops paying rent and the building can't be re-let, Nvidia covers the shortfall. Jensen Huang says this is not circular financing. It is a loop in which the chip maker insures the customer's rent on the building where the chips go. Sure.",
+    "details": "Announced Aug 17, 2026 and described in an SEC filing as a residual-value guarantee: Nvidia covers any shortfall if OpenAI defaults on rent and re-lease/sale proceeds fall short; OpenAI agreed to reimburse Nvidia for anything paid out. Campus could reach ~8 GW with the first 800 MW in 2028 (initial guarantees reportedly cover 4.25 GW with an option for 3.75 GW). Nvidia also invests $1.5B in SB Energy. Nvidia said it is not guaranteeing the whole site's financing. Reports differ on county (Pike vs Pickaway) and on an earlier reported $250B figure. Huang rejected the 'circular' label. Nvidia projects ~$600B of revenue from OpenAI by 2030 per one report.",
+    "impact": "Nvidia's balance sheet is now backstopping its biggest customer's real estate.",
+    "sources": [
+      {
+        "title": "Investing.com (Reuters): Nvidia to provide up to $105 billion guarantee for OpenAI's Ohio data center",
+        "url": "https://www.investing.com/news/stock-market-news/nvidia-to-invest-15-billion-in-sb-energy-under-openai-data-center-deal-4863156"
+      },
+      {
+        "title": "Data Center Knowledge: Nvidia backs OpenAI's Ohio data center buildout with $105B guarantee",
+        "url": "https://www.datacenterknowledge.com/data-center-construction/nvidia-backs-openai-s-ohio-data-center-buildout-with-105b-guarantee"
+      },
+      {
+        "title": "SCMP: Nvidia to provide up to US$105 billion guarantee",
+        "url": "https://www.scmp.com/tech/big-tech/article/3364341/nvidia-provide-us105-billion-guarantee-openais-ohio-data-centre"
+      }
+    ],
+    "tags": [
+      "funding",
+      "nvidia",
+      "openai",
+      "guarantee",
+      "sb-energy",
+      "softbank",
+      "ohio",
+      "circular-financing",
+      "data-center"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "oracle-force-majeure-project-jupiter-2026",
+    "title": "Oracle Sends Force Majeure Notice on Its Giant New Mexico Stargate Campus Over Power Delays",
+    "date": "2026-09-24",
+    "organization": "Oracle / Blue Owl / OpenAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "Bloomberg reported Oracle sent a force majeure notice to Blue Owl over Project Jupiter, its giant New Mexico Stargate campus, to protect its right to defer rent if power isn't ready for a 2028 opening. The gas pipeline slipped six months after regulators kept saying no. Oracle says force majeure notices are routine; its stock fell 4-6% anyway.",
+    "details": "Bloomberg reported on Sept 24, 2026 that Oracle sent a force majeure notice to a unit of Blue Owl developing Project Jupiter (Doña Ana County, NM, ~2.45 GW), reportedly allowing Oracle to defer rent for up to three years after payments begin if power-related force majeure is agreed. An Energy Transfer pipeline slipped nearly six months to Feb 1, 2027 after permit denials; an air permit decision was due Nov 23. Oracle said the project is on schedule and such notices are common; Blue Owl said the notice 'does not change the financial commitments'. Oracle shares fell ~4% (intraday more than 6%). In Dec 2025 a Bloomberg report of Oracle-OpenAI delays to 2028 had also hit the stock; Oracle denied it.",
+    "impact": "Showed the fragility of the debt-financed Stargate build: power delays can ripple through tenants, lenders and rent.",
+    "sources": [
+      {
+        "title": "The Next Web: Oracle force majeure over New Mexico data centre",
+        "url": "https://thenextweb.com/news/oracle-force-majeure-project-jupiter-new-mexico"
+      },
+      {
+        "title": "BNN Bloomberg: Oracle triggers force majeure on data centre project over power delays",
+        "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/09/24/oracle-triggers-force-majeure-on-data-centre-project-over-power-delays-source-says/"
+      },
+      {
+        "title": "Dealroom: Oracle files force majeure on 2.45GW New Mexico Stargate data center",
+        "url": "https://dealroom.co/news/156472-oracle-files-force-majeure-on-2-45gw-new-mexico-stargate-data-center/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "oracle",
+      "stargate",
+      "blue-owl",
+      "force-majeure",
+      "power",
+      "data-center",
+      "debt"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "ai-debt-bond-stress-hyperion-coreweave-2026",
+    "title": "The AI Buildout Runs on Debt, and the Bonds Are Starting to Flinch",
+    "date": "2026-10-15",
+    "organization": "Meta / Blue Owl / Oracle / CoreWeave",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Hyperscalers sold roughly $159-194 billion of bonds in the first half of 2026. Meta's $27.3B Hyperion deal, parked in an off-balance-sheet vehicle with Blue Owl, trades at about 91 cents on the dollar. Oracle's CDS more than doubled; CoreWeave's bond yields hit roughly 15% and its credit spread peaked at 1,195 bp. A third of 2026 hyperscaler capex is reportedly debt-funded. 'Too big to fail' needs a stronger balance sheet than 'someone will rent the building'.",
+    "details": "Figures vary by source: Alphabet, Amazon, Meta, Microsoft and Oracle bond sales were estimated at $159B through early June and ~$194B (ex Microsoft) by early July, with JPMorgan projecting $4.1T of AI debt issuance through 2030. Meta's Hyperion data center was financed through bankruptcy-remote SPV Beignet Investor LLC, which issued $27.3B of 6.581% notes due 2049 (Pimco anchored $18B; Blue Owl owns 80% of the project) and Meta's residual value guarantees could cover shortfalls up to ~$28B; the bond traded near 91.6 on Oct 7. Oracle's 5-year CDS rose from 141 bp (Jan 2) to 308 bp (Oct 21), with borrowings of ~$125-132B. CoreWeave's debt rose to ~$35B by June 30 from $21.4B at end-2025; its spread peaked at 1,195 bp on Oct 15. Blue Owl reportedly struggled to syndicate a $4B CoreWeave-anchored deal. Goldman estimated about one-third of 2026 hyperscaler capex is debt-funded. Many figures come from newsletters and analysis blogs and should be checked against Reuters and filings.",
+    "impact": "Credit markets started pricing the risk that the AI buildout's cash flows won't cover its debt.",
+    "sources": [
+      {
+        "title": "CNBC: Debt-hungry AI companies face increased risk as bond yields spike",
+        "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html"
+      },
+      {
+        "title": "Forbes: The half-trillion-dollar silicon gamble, inside the AI debt boom",
+        "url": "https://www.forbes.com/sites/mayrarodriguezvalladares/2026/10/22/the-half-trillion-dollar-silicon-gamble-inside-the-ai-debt-boom/"
+      },
+      {
+        "title": "Naked Capitalism: Banks struggle to digest the mounting debt driving the AI boom",
+        "url": "https://www.nakedcapitalism.com/2026/10/banks-struggle-to-digest-the-mounting-debt-driving-the-ai-boom.html"
+      },
+      {
+        "title": "Motion and Madness: AI debt in October 2026",
+        "url": "https://www.motionandmadness.com/p/ai-debt-in-october-2026-how-the-buildout"
+      },
+      {
+        "title": "Tomasz Tunguz: Is your AI funded by junk bonds?",
+        "url": "https://tomtunguz.com/is-your-ai-funded-by-junk-bonds/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "debt",
+      "bonds",
+      "meta",
+      "hyperion",
+      "blue-owl",
+      "oracle",
+      "coreweave",
+      "private-credit",
+      "credit-spreads"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "ai-stock-selloff-october-2026",
+    "title": "October 2026 AI Selloff: Debt-Financed Names Fall First as Doubts About OpenAI's Ability to Pay Spread",
+    "date": "2026-10-14",
+    "organization": "Nvidia / CoreWeave / Oracle / Meta",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "October opened with reports that OpenAI's revenue was lagging its compute commitments, and the stocks that borrowed to build capacity for it sold off hardest: CoreWeave fell 15% in a day, Oracle ~5%, Nvidia had its worst month in a while. Macro (hot CPI, oil) piled on. Wall Street called it a scare. Retail kept buying, as is tradition.",
+    "details": "Per market coverage: debt-funded AI names (CoreWeave, Nebius, Oracle) led early-October declines; on Oct 14 CoreWeave reportedly fell ~15% as its bond yields neared 15% and a hot September CPI print fueled rate-hike expectations; oil reportedly topped $116 amid US-Iran tensions. Estimates of losses varied (one source claims $1T erased from US tech after Meta's equity raise); CoreWeave's decline from Oct 1 ranged from ~8% to ~30% depending on the date measured. Analysts said the selloff hadn't broken the AI investment case and retail investors were buying the dip. Mostly secondary market blogs; verify figures.",
+    "impact": "Nervous markets for AI infrastructure names; first major test of AI-debt appetite since the boom started.",
+    "sources": [
+      {
+        "title": "24/7 Wall St: CoreWeave sinks 7% as financed AI buildout names sell off",
+        "url": "https://247wallst.com/investing/2026/10/08/coreweave-sinks-7-as-financed-ai-buildout-names-sell-off-apart-from-cloud-software-nebius-drops-6-oracle-falls-5/"
+      },
+      {
+        "title": "TradingKey: CoreWeave and Oracle shares sell off, AI infrastructure debt risks",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262236638-coreweave-oracle-shares-selloff-ai-infrastructure-debt-risk-rising-tradingkey"
+      },
+      {
+        "title": "Admiral Markets: OpenAI revenue and why AI stocks fell in October",
+        "url": "https://admiralmarkets.com/analytics/traders-blog/openai-revenue-ai-selloff-october-2026"
+      }
+    ],
+    "tags": [
+      "funding",
+      "selloff",
+      "coreweave",
+      "oracle",
+      "nvidia",
+      "bubble",
+      "markets"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "meta-95b-equity-raise-chipmakers-2026",
+    "title": "Meta Raises Up to $95B in Stock to Fund AI, With Nvidia, AMD and Broadcom Reportedly Eyeing Up to $5B of It",
+    "date": "2026-10-26",
+    "organization": "Meta / Nvidia / AMD / Broadcom",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Meta, whose free cash flow went negative in Q3, announced up to $95 billion in equity offerings to pay for AI capex. Nvidia, AMD and Broadcom reportedly expressed interest in buying up to $5B of the stock. So the chip suppliers are funding the customer's purchases of the chips. Circular finance has gotten so familiar it now comes with an underwriting syndicate.",
+    "details": "On Oct 26, 2026 Meta launched $35B of concurrent underwritten offerings ($22.5B of Class A common via forward sales and $12.5B of mandatory convertible preferred) plus a planned $60B at-the-market program starting early 2027. Reports said Nvidia, AMD and Broadcom were cornerstone-type interest for up to $5B of the common stock. Meta guided 2026 capex of $135-145B and free cash flow turned negative in Q3; it had said it needs 'hundreds of billions of dollars' for AI, sending shares down 7% the prior Thursday. Shares fell as much as 4% before recovering. The $60B program's terms were not final.",
+    "impact": "Even the richest hyperscaler is now issuing equity to keep up, with its chip suppliers as buyers.",
+    "sources": [
+      {
+        "title": "Anadolu: Meta unveils $95B financing plan to fund AI expansion",
+        "url": "https://www.aa.com.tr/en/science-technology/meta-unveils-95b-financing-plan-to-fund-ai-expansion/4101382"
+      },
+      {
+        "title": "Finviz: Meta shares recover as company announces $35B AI financing plan",
+        "url": "https://finviz.com/news/407811/meta-shares-recover-as-company-announces-35-billion-ai-financing-plan"
+      },
+      {
+        "title": "Stocktwits: Meta launches $35B stock offering, plans $60B program, Nvidia, AMD, Broadcom eye up to $5B",
+        "url": "https://stocktwits.com/news-articles/markets/equity/meta-launches-35-b-stock-offering-plans-another-60-b-program-in-2027-nvidia-amd-broadcom-eye-up-to-5-b-investment/cZU3GQpRByl"
+      }
+    ],
+    "tags": [
+      "funding",
+      "meta",
+      "equity-raise",
+      "nvidia",
+      "amd",
+      "broadcom",
+      "capex",
+      "circular-financing"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "anthropic-s1-public-2026",
+    "title": "Anthropic Files Public S-1: $16.3B in Six Months, an $80.7B Net Loss, and a Nasdaq Ticker",
+    "date": "2026-10-26",
+    "organization": "Anthropic",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Anthropic's public S-1 shows $16.3 billion of first-half revenue (up ~14x year over year), a net loss of $80.7 billion, of which $72 billion is a non-cash charge because its own valuation went up, and an operating loss of only $693 million. Hard to think of a more modern company than one that lost $72 billion because it got too valuable. Listing as 'ANT' on Nasdaq, reportedly around $1.5T, marketing as soon as the week of Nov 9.",
+    "details": "Filed Oct 26, 2026 with a proposed Nasdaq listing under 'ANT' and no IPO terms yet. Reported figures: H1 2026 revenue ~$16.29B (vs ~$1.16B a year earlier); net loss $80.7B, including a ~$72.4B non-cash charge from fair-value changes in convertible notes, derivatives and SAFEs; operating loss ~$693M; compute and infrastructure spend ~$8.95B (up from $2.33B); about 20% of H1 revenue came from two unnamed customers. Last private valuation: $965B (May). Reuters-reported market cap around $1.5T; some analysts suggest up to $2T and a raise of $75-100B. Goldman Sachs and Morgan Stanley are lead bookrunners. Figures come from secondary reporting of the filing.",
+    "impact": "Sets up one of the largest IPOs ever and the first public look at a frontier lab's financials.",
+    "sources": [
+      {
+        "title": "AI Weekly: Anthropic files for Nasdaq IPO under 'ANT'; H1 revenue $16.3B",
+        "url": "https://aiweekly.co/alerts/anthropic-files-for-nasdaq-ipo-under-ant-h1-rev-163b"
+      },
+      {
+        "title": "IPOScoop: The IPO Buzz, Anthropic (ANT proposed) files its S-1",
+        "url": "https://www.iposcoop.com/the-ipo-buzz-anthropic-ant-proposed-files-its-s-1/"
+      },
+      {
+        "title": "FourWeekMBA: Anthropic's S-1 shows $16.3B half-year revenue",
+        "url": "https://fourweekmba.com/ai-anthropics-s-1-shows-16-3b-half-year-revenue-up-14x/"
+      },
+      {
+        "title": "Hackernoon: Anthropic's S-1 and the $80.7B loss that mostly isn't",
+        "url": "https://hackernoon.com/anthropics-s-1-shows-$163b-in-half-year-revenue-a-900percent-nrr-and-an-$807b-loss-that-mostly-isnt"
+      }
+    ],
+    "tags": [
+      "funding",
+      "anthropic",
+      "ipo",
+      "s-1",
+      "nasdaq",
+      "valuation",
+      "net-loss"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "coreweave-ipo-nvidia-stake-2025",
+    "title": "CoreWeave Goes Public at $40, Below Range, With Nvidia as Investor, Supplier and Landlord's Favorite Tenant",
+    "date": "2025-03-28",
+    "organization": "CoreWeave / Nvidia",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "CoreWeave, a GPU-rental company that exists because Nvidia sells it GPUs, priced its IPO at $40, below the $47-55 range, raising about $1.5B with Nvidia as a significant shareholder. Nvidia sells the chips, owns part of the buyer, and the buyer rents the chips to OpenAI, which Nvidia also invests in. The flywheel got its first public-market stress test, and it came out flat.",
+    "details": "CoreWeave priced its Nasdaq IPO March 27-28, 2025 at $40 a share, below its marketed range, raising roughly $1.5B; the stock closed flat on day one. Nvidia was a principal shareholder (about 6% pre-IPO per the prospectus; reports of ~3.8% post-IPO; later ~$900M stake in a Q1 filing). NBC's widely repeated summary of the loop: Nvidia invests in OpenAI, which buys cloud from Oracle, which buys chips from Nvidia, which has a stake in CoreWeave, which provides infrastructure to OpenAI. CoreWeave's CEO called circular-financing claims 'ridiculous', arguing Nvidia's stake is too small to prop it up.",
+    "impact": "Established the neocloud model as a public-market bet; CoreWeave became the debt-stress canary for the AI buildout.",
+    "sources": [
+      {
+        "title": "IPOScoop: CoreWeave sets terms for $2.5B IPO",
+        "url": "https://www.iposcoop.com/?p=34717"
+      },
+      {
+        "title": "NBC: Nvidia owned $900 million in CoreWeave stock",
+        "url": "https://www.nbcsandiego.com/news/business/money-report/nvidia-owned-900-million-in-coreweave-stock-as-of-march-filing-shows/3826799"
+      },
+      {
+        "title": "Curionic: Inside AI's circular financing web",
+        "url": "https://www.curionic.net/2026/08/ai-circular-financing-nvidia-openai-oracle-coreweave-2026.html"
+      }
+    ],
+    "tags": [
+      "funding",
+      "coreweave",
+      "nvidia",
+      "ipo",
+      "neocloud",
+      "circular-financing"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "core-scientific-coreweave-rejected-2025",
+    "title": "Core Scientific Shareholders Vote Down CoreWeave's $9B All-Stock Offer: 'Your Stock Is Not Worth That Much'",
+    "date": "2025-10-30",
+    "organization": "CoreWeave / Core Scientific",
+    "award": "Economy Goes Brrrrr",
+    "severity": "medium",
+    "summary": "CoreWeave tried to buy its landlord Core Scientific with its own freshly minted stock at a fixed exchange ratio, and Core Scientific's shareholders said no, including its largest active holder and proxy adviser ISS. Being paid in someone else's AI-bubble stock turns out to look different once you've seen the chart. CoreWeave fell ~4% on the rejection; it was already the second failed bid.",
+    "details": "Core Scientific shareholders voted down CoreWeave's roughly $9B all-stock acquisition on Oct 30, 2025, and the merger agreement was terminated. Two Seas Capital opposed the fixed exchange ratio and valuation; ISS recommended against. It was CoreWeave's second failed Core Scientific bid after a rejected all-cash offer in June 2024. CoreWeave said it respected the decision; its shares fell about 3.9%.",
+    "impact": "A public vote of no confidence in using AI-bubble equity as acquisition currency.",
+    "sources": [
+      {
+        "title": "Yahoo Finance (Reuters): Core Scientific shareholders reject $9 billion CoreWeave offer",
+        "url": "https://finance.yahoo.com/news/core-scientific-terminates-9-billion-143818190.html"
+      },
+      {
+        "title": "The Star (Reuters): Core Scientific terminates $9 billion merger deal",
+        "url": "https://www.thestar.com.my/tech/tech-news/2025/10/30/core-scientific-terminates-9-billion-merger-deal-with-coreweave"
+      },
+      {
+        "title": "Yahoo Finance: CoreWeave's acquisition of Core Scientific fails as CORZ shareholders balk at price",
+        "url": "https://finance.yahoo.com/news/core-scientific-8217-merger-coreweave-144146009.html"
+      }
+    ],
+    "tags": [
+      "funding",
+      "coreweave",
+      "core-scientific",
+      "m&a",
+      "shareholders",
+      "stock-deal"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "microsoft-openai-restructure-2025",
+    "title": "Microsoft Gets 27% of OpenAI (~$135B); OpenAI Commits an Extra $250B to Azure",
+    "date": "2025-10-28",
+    "organization": "Microsoft / OpenAI",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "OpenAI finished converting into a public benefit corporation, and Microsoft walked away with roughly 27% (about $135 billion) while OpenAI committed an incremental $250 billion to Azure. The nonprofit holds about $130B. Microsoft invests in OpenAI; OpenAI sends the money back as a quarter-trillion dollars of Azure spend. If you squint it's a nonprofit transformation. If you don't, it's a wire transfer with extra steps.",
+    "details": "Announced Oct 28, 2025 after Delaware and California AG 'no objection' statements: the for-profit became OpenAI Group PBC and the nonprofit became the OpenAI Foundation. Microsoft's ~27% on an as-converted diluted basis was valued at about $135B; the Foundation's stake at about $130B (~26%); employees and investors ~47%. OpenAI committed to an incremental $250B of Azure purchases; Microsoft lost its right of first refusal as compute provider but kept API exclusivity until AGI is verified, and IP rights through 2032. Valuation implied ~ $500B.",
+    "impact": "Unlocked OpenAI's multi-cloud and IPO path; cemented Microsoft as both biggest shareholder and biggest supplier.",
+    "sources": [
+      {
+        "title": "Techzine: OpenAI completes restructure, Microsoft continues to play a role",
+        "url": "https://www.techzine.eu/news/infrastructure/135837/openai-completes-restructure-microsoft-continues-to-play-a-role"
+      },
+      {
+        "title": "Gulf News: Microsoft holds 27% of OpenAI in revamped partnership",
+        "url": "https://gulfnews.com/technology/companies/microsoft-holds-27-of-openai-in-revamped-partnership-2-1.500324696"
+      }
+    ],
+    "tags": [
+      "funding",
+      "microsoft",
+      "openai",
+      "restructuring",
+      "azure",
+      "pbc",
+      "circular-financing"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "broadcom-openai-10gw-custom-chips-2025",
+    "title": "OpenAI and Broadcom Announce 10 Gigawatts of Custom Chips Before Anyone's Taped Out the First One",
+    "date": "2025-10-13",
+    "organization": "OpenAI / Broadcom",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "Days after AMD, OpenAI announced a multiyear Broadcom collaboration for 10 GW of custom AI accelerators, with mass production expected in 2026. Broadcom's stock jumped. That's now over 26 GW of chip commitments across Nvidia, AMD and Broadcom from a company that wasn't profitable. The AI industry's greatest innovation is the gigawatt as a unit of announcement.",
+    "details": "Announced October 2025: OpenAI to design custom AI accelerators with Broadcom, targeting 10 GW, with deployments beginning in the second half of 2026. Together with Nvidia (10 GW) and AMD (6 GW) it brought OpenAI's announced chip commitments past 26 GW. Broadcom's stock rose sharply. Broadcom also became a financing node in 2026 when it backstopped Anthropic's compute leases.",
+    "impact": "Added a third chip supplier to OpenAI's web of commitments.",
+    "sources": [
+      {
+        "title": "Crypto Briefing: OpenAI heterogeneous AI infrastructure",
+        "url": "https://cryptobriefing.com/openai-heterogeneous-ai-infrastructure-software/"
+      },
+      {
+        "title": "MEXC News: OpenAI Broadcom custom chips",
+        "url": "https://www.mexc.com/news/498101"
+      }
+    ],
+    "tags": [
+      "funding",
+      "broadcom",
+      "openai",
+      "custom-silicon",
+      "gigawatts",
+      "circular-financing"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "amazon-openai-38b-aws-2025",
+    "title": "OpenAI Signs $38B, Seven-Year AWS Deal Days After Ending Microsoft's Cloud Exclusivity",
+    "date": "2025-11-03",
+    "organization": "OpenAI / Amazon",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "Within a week of freeing itself from Microsoft's exclusive cloud rights, OpenAI signed a $38 billion, seven-year AWS deal for hundreds of thousands of Nvidia GPUs. Amazon, which also owns a big piece of Anthropic, shares jumped 5%. Amazon would later put up to $50B into OpenAI, which is how you know the compute deal was a down payment.",
+    "details": "Announced Nov 3, 2025: $38B over seven years for AWS capacity including hundreds of thousands of Nvidia GPUs and tens of millions of CPUs for agentic workloads, with initial capacity due by end of 2026. It was OpenAI's first major AWS contract and came days after the Microsoft restructuring. Amazon rose ~5% premarket. In 2026 Amazon committed up to $50B to OpenAI's mega-round, with a reported $35B conditional on milestones or an IPO.",
+    "impact": "Another vendor-turned-investor in OpenAI; Amazon now bankrolls both OpenAI and Anthropic.",
+    "sources": [
+      {
+        "title": "Ada Derana (Reuters): OpenAI, Amazon strike $38 billion agreement",
+        "url": "https://www.adaderana.lk/technology/114258/openai-amazon-strike-38-billion-agreement-for-chatgpt-maker-to-use-aws"
+      },
+      {
+        "title": "eWeek: Amazon and OpenAI strike $38B cloud deal",
+        "url": "https://www.eweek.com/news/amazon-openai-cloud-deal/"
+      },
+      {
+        "title": "Free Press Journal: OpenAI inks $38B cloud pact with Amazon, Microsoft loses exclusivity",
+        "url": "https://www.freepressjournal.in/tech/openai-inks-38-billion-cloud-pact-with-amazon-microsoft-loses-exclusivity"
+      }
+    ],
+    "tags": [
+      "funding",
+      "amazon",
+      "aws",
+      "openai",
+      "cloud",
+      "nvidia",
+      "circular-financing"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "openai-cerebras-10b-2026",
+    "title": "OpenAI Signs $10B+ Cerebras Inference Deal and Gets Warrants in the Chip Company",
+    "date": "2026-01-14",
+    "organization": "OpenAI / Cerebras",
+    "award": "Economy Goes Brrrrr",
+    "severity": "high",
+    "summary": "OpenAI committed to 750 MW of Cerebras inference capacity through 2028, reported at more than $10 billion, and received warrants for a minority stake in Cerebras. The pattern holds: the customer gets equity in the vendor. Cerebras later raised $5.55B in an IPO and reported the deal's value as over $20B. Just a lil' revenue concentration.",
+    "details": "Reported January 2026: OpenAI to buy 750 MW of Cerebras inference capacity through 2028, initially reported as >$10B; OpenAI receives warrants for a minority equity stake. Cerebras's Q1 2026 results (8-K) put the contract's value above $20B over several years. Cerebras IPO'd on May 13, 2026 at $185 and fell below that price by October.",
+    "impact": "Made one customer the central pillar of a newly public chip company's backlog.",
+    "sources": [
+      {
+        "title": "Cerebras Systems 8-K (Q1 2026 results)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0002021728/000162828026044941/cbrsannouncesfinancialresu.htm"
+      },
+      {
+        "title": "Tech Insider: Cerebras IPO filing, $10B OpenAI deal",
+        "url": "https://tech-insider.org/cerebras-ipo-filing-510m-revenue-openai-deal-23b-valuation-2026/"
+      },
+      {
+        "title": "Compute Prices: OpenAI-Cerebras deal",
+        "url": "https://computeprices.com/deals/openai-cerebras-2026-01"
+      }
+    ],
+    "tags": [
+      "funding",
+      "cerebras",
+      "openai",
+      "warrants",
+      "inference",
+      "customer-concentration"
+    ],
+    "damages_usd": 0
+  },
+  {
+    "id": "anthropic-google-broadcom-tpu-deal-2026",
+    "title": "Anthropic Signs 3.5 GW Google/Broadcom TPU Deal; Broadcom Backstops $29B of Its Leases, Apollo Fronts $35B",
+    "date": "2026-04-06",
+    "organization": "Anthropic / Google / Broadcom / Apollo",
+    "award": "Economy Goes Brrrrr",
+    "severity": "critical",
+    "summary": "Anthropic's most significant compute commitment ever: about 3.5 gigawatts of next-gen Google TPUs designed by Broadcom, starting 2027. Broadcom's own SEC filing says Anthropic's ability to use the capacity depends on its 'continued commercial success'. Then in June Apollo fronted a $35B package of racks, with Broadcom backstopping up to $29B of Anthropic's five-year lease obligations. The risk wasn't removed; it was sliced and passed around until nobody has to say who is holding it.",
+    "details": "Broadcom's April 6, 2026 8-K covers ~3.5 GW of TPU-based capacity for Anthropic starting 2027 and a supply-assurance agreement through 2031; it says Anthropic's use of the extra compute depends on its ongoing commercial performance. In June 2026 (arranged June 8), Apollo-managed funds with Blackstone and banks put up a $35B package through a special-purpose vehicle (Compute SPV) buying AI racks and leasing the compute to Anthropic, with Broadcom backstopping up to $29B of five-year lease obligations; the platform is meant to enable 20+ GW through 2028. Whether Anthropic must consolidate the vehicle isn't clear from filings. Separately, Alphabet's June-quarter filing shows $43.8B of maximum exposure under data-center backstops. This builds on Anthropic's October 2025 deal for up to a million TPUs. The 'tens of billions' and '$46B' headline values were not confirmed.",
+    "impact": "Split the risk of Anthropic's compute commitments across a chipmaker, private credit and a hyperscaler.",
+    "sources": [
+      {
+        "title": "CNBC: Broadcom agrees to expanded chip deals with Google, Anthropic",
+        "url": "https://www.cnbc.com/2026/04/06/broadcom-agrees-to-expanded-chip-deals-with-google-anthropic.html"
+      },
+      {
+        "title": "DCD: Broadcom to develop Google TPUs until 2031; Anthropic signs for 3.5GW of TPUs",
+        "url": "https://www.datacenterdynamics.com/en/news/broadcom-to-develop-google-tpus-until-2031-anthropic-signs-deal-with-both-companies-for-35gw-of-tpus/"
+      },
+      {
+        "title": "MLQ: Google's Anthropic compute buildout splits risk among Broadcom, Wall Street and data-center developers",
+        "url": "https://mlq.ai/news/googles-anthropic-compute-buildout-splits-risk-among-broadcom-wall-street-and-data-center-developers/"
+      },
+      {
+        "title": "HPCwire: Anthropic signs Google, Broadcom deal to add multi-gigawatt TPU capacity",
+        "url": "https://www.hpcwire.com/off-the-wire/anthropic-signs-google-broadcom-deal-to-add-multi-gigawatt-tpu-capacity/"
+      }
+    ],
+    "tags": [
+      "funding",
+      "anthropic",
+      "google",
+      "broadcom",
+      "apollo",
+      "tpu",
+      "spv",
+      "lease-backstop",
+      "private-credit"
+    ],
+    "damages_usd": 0
   }
 ]
