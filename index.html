@@ -20,6 +20,7 @@
     --low: #3fb950;
     --link: #58a6ff;
     --release: #58a6ff;
+    --funding: #2fd36b;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -167,6 +168,7 @@
   .tl-medium { background: var(--medium); }
   .tl-low { background: var(--low); }
   .tl-release { background: var(--release); }
+  .tl-funding { background: var(--funding); }
 
   .tl-year {
     position: absolute;
@@ -335,6 +337,7 @@
   .severity-medium { background: rgba(210, 153, 34, 0.15); color: var(--medium); border: 1px solid rgba(210, 153, 34, 0.3); }
   .severity-low { background: rgba(63, 185, 80, 0.15); color: var(--low); border: 1px solid rgba(63, 185, 80, 0.3); }
   .severity-release { background: rgba(88, 166, 255, 0.15); color: var(--release); border: 1px solid rgba(88, 166, 255, 0.3); }
+  .severity-funding { background: rgba(47, 211, 107, 0.15); color: var(--funding); border: 1px solid rgba(47, 211, 107, 0.35); }
 
   /* Release / milestone cards */
   .incident-card.release-card {
@@ -354,6 +357,26 @@
     background: rgba(88, 166, 255, 0.12);
     color: var(--release);
     border-color: rgba(88, 166, 255, 0.3);
+  }
+
+  /* Funding / money cards */
+  .incident-card.funding-card {
+    border-color: rgba(47, 211, 107, 0.35);
+    background: linear-gradient(135deg, rgba(47, 211, 107, 0.06) 0%, var(--surface) 60%);
+  }
+
+  .incident-card.funding-card:hover {
+    border-color: var(--funding);
+  }
+
+  .incident-card.funding-card .card-title {
+    color: var(--funding);
+  }
+
+  .incident-card.funding-card .award-badge {
+    background: rgba(47, 211, 107, 0.12);
+    color: var(--funding);
+    border-color: rgba(47, 211, 107, 0.3);
   }
 
   .award-badge {
@@ -518,6 +541,7 @@
   <select id="filter-severity">
     <option value="">All Severities</option>
     <option value="release">🚀 Releases</option>
+    <option value="funding">💰 KA-CHING</option>
     <option value="critical">Critical</option>
     <option value="high">High</option>
     <option value="medium">Medium</option>
@@ -563,6 +587,7 @@
   };
 
   const RELEASE_AWARD = "The Singularity Has Arrived";
+  const FUNDING_AWARD = "Economy Goes Brrrrr";
 
   let allIncidents = [];
 
@@ -622,7 +647,7 @@
   function updateStats() {
     document.getElementById('total-count').textContent = allIncidents.length;
     document.getElementById('org-count').textContent = new Set(allIncidents.map(i => i.organization)).size;
-    document.getElementById('critical-count').textContent = allIncidents.filter(i => i.severity === 'critical').length;
+    document.getElementById('critical-count').textContent = allIncidents.filter(i => i.severity === 'critical' && i.award !== FUNDING_AWARD).length;
     const totalDamages = allIncidents.reduce((sum, i) => sum + (i.damages_usd || 0), 0);
     let damagesStr;
     if (totalDamages >= 1e12) damagesStr = '$' + (totalDamages / 1e12).toFixed(1) + 'T+';
@@ -669,7 +694,7 @@
       bins[mk] = (bins[mk] || 0);
       const stackIdx = bins[mk];
       bins[mk]++;
-      const severity = i.award === RELEASE_AWARD ? 'release' : i.severity;
+      const severity = i.award === RELEASE_AWARD ? 'release' : i.award === FUNDING_AWARD ? 'funding' : i.severity;
       const tip = `${i.title} — ${formatDate(i.date)}`;
       return { left, bottom: stackIdx * 8, severity, tip, year: i.date.slice(0, 4), id: i.id };
     });
@@ -725,6 +750,7 @@
     let filtered = allIncidents.filter(i => {
       if (award && i.award !== award) return false;
       if (severity === 'release') { if (i.award !== RELEASE_AWARD) return false; }
+      else if (severity === 'funding') { if (i.award !== FUNDING_AWARD) return false; }
       else if (severity && i.severity !== severity) return false;
       if (org && i.organization !== org) return false;
       if (year && !i.date.startsWith(year)) return false;
@@ -777,9 +803,10 @@
       ).join('');
 
       const isRelease = i.award === RELEASE_AWARD;
-      const cardClass = isRelease ? 'incident-card release-card' : 'incident-card';
-      const sevClass = isRelease ? 'severity-release' : `severity-${i.severity}`;
-      const sevLabel = isRelease ? 'release' : i.severity;
+      const isFunding = i.award === FUNDING_AWARD;
+      const cardClass = isRelease ? 'incident-card release-card' : isFunding ? 'incident-card funding-card' : 'incident-card';
+      const sevClass = isRelease ? 'severity-release' : isFunding ? 'severity-funding' : `severity-${i.severity}`;
+      const sevLabel = isRelease ? 'release' : isFunding ? '\uD83D\uDCB0 KA-CHING!' : i.severity;
 
       return `
         <div class="${cardClass}" data-id="${escapeHtml(i.id)}">
